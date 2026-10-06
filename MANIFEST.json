@@ -13,7 +13,19 @@
   },
   {
     "path": "COURSE_MAP.md",
-    "sha256": "93dfa06753bce39e9e692f99df21303a549fe29c62647fca8479d43c522f071d"
+    "sha256": "97aff169a556d257d135daf868f9cd4c4ffe20ba6c38ebbd70fb5d928f116663"
+  },
+  {
+    "path": "docs/41_Video_Continuity_Matrix.csv",
+    "sha256": "cbcd1a4f67608d28b40bccc0edd859c7f442aa3f05deb0bd3ef5b007e799ff4f"
+  },
+  {
+    "path": "docs/41_Video_Remediation_Matrix.md",
+    "sha256": "2c62ef897e46807660465c88296a5aa2bac3a3109146be9112ce610fe6b3980a"
+  },
+  {
+    "path": "docs/Audit_Findings.md",
+    "sha256": "e2f0a119d5a83ecda4bf086a06b2a94037717bc292667d691db20402c5d98206"
   },
   {
     "path": "docs/course-map.csv",
@@ -21,7 +33,7 @@
   },
   {
     "path": "docs/INVENTORY_STATUS.md",
-    "sha256": "2e7f0e42e24c87e7cc1aa6cc72c44c9d1ffef2cb12499cf2e69ea409fd8a4970"
+    "sha256": "adec659ee409c1e4a0210ec175c7f6c9f4a77d74bcee806225207a1e10b23bb4"
   },
   {
     "path": "docs/PROJECT_SCOPE.md",
@@ -32,8 +44,12 @@
     "sha256": "34f03b4234d7564cded12c2b4c2cc0bc169f8fc96eda749df5c63114d9aa91aa"
   },
   {
+    "path": "docs/Verified_Inventory.json",
+    "sha256": "94f6e71ae6c3312e15cedc91921e37808a688c8d9b160bfab5bfeeb1d8753d55"
+  },
+  {
     "path": "README.md",
-    "sha256": "c5d67a89b9bd5df7fb1364d015ebc5b9c1d0629456271ea6e935bb5fc7b86e5a"
+    "sha256": "e61880d82bee132d8c21f4e8956fe054125b45a9e01bcd498c418fc1674e82e5"
   },
   {
     "path": "RIGHTS.md",

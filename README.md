@@ -2,7 +2,9 @@
 
 Hands-on Python practice, a runnable record-cleaning capstone, and offline automation reference exercises for the Rebootv2 learning path.
 
-**Status: companion draft, October 6, 2026.** The 41 lesson labels are a provisional map from the production documents. They are not verified video titles. Lesson 01 has a conflicting user-supplied planning title; other numbering conflicts are recorded in [the inventory notes](docs/INVENTORY_STATUS.md). Existing videos stay intact. Match these exercises to actual footage before public course rollout.
+**Status: companion draft, October 6, 2026.**
+
+**Live audit update:** All 41 video identities and master order are now verified in Studio. See [the verified video-to-practice crosswalk](COURSE_MAP.md). Existing practice-folder labels differ from several actual video topics; do not treat them as matched lesson downloads. The 41 lesson labels are a provisional map from the production documents. They are not verified video titles. Lesson 01 has a conflicting user-supplied planning title; other numbering conflicts are recorded in [the inventory notes](docs/INVENTORY_STATUS.md). Existing videos stay intact. Match these exercises to actual footage before public course rollout.
 
 ## Start here
 
