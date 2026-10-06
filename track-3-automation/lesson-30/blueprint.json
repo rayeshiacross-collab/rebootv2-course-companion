@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 30,
+  "working_focus": "Content Workflow",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Define idea, brief, draft, review, approval and publish states. Require explicit approval before publication.",
+  "acceptance": "Draft, rejected and pending states cannot publish.",
+  "challenge": "Invalidate approval when the draft changes.",
+  "review_risk": "Boolean approval detached from draft version",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

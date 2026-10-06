@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 40,
+  "working_focus": "End to End Automation Capstone",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Connect intake, validation, normalization, classification, routing, record update, draft, approval, send and logging.",
+  "acceptance": "Seven cases pass: success, missing field, ambiguity, duplicate, rejection, downstream failure and final recovery.",
+  "challenge": "Demonstrate restart without duplicate sends.",
+  "review_risk": "Disconnected happy-path demos",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

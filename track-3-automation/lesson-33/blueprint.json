@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 33,
+  "working_focus": "Database Workspace Automation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Find by stable ID; update only intended fields; create only on an explicit missing-record rule.",
+  "acceptance": "Same name with different IDs remains separate; repeated update is safe.",
+  "challenge": "Reject an update without a stable ID.",
+  "review_risk": "Display name used as unique key",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

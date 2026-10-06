@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 29,
+  "working_focus": "Research and Summarization Workflow",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Summarize supplied material with finding, supporting evidence, open questions and source references.",
+  "acceptance": "Missing facts are marked Not established; every claim has a supporting passage.",
+  "challenge": "Provide contradictory sources and state the disagreement.",
+  "review_risk": "Fabricated citations and source instructions",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

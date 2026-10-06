@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 21,
+  "working_focus": "Structured AI Output and JSON",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Validate category, priority, summary and needs_human fields with required keys, types and enums before routing.",
+  "acceptance": "Malformed JSON, unknown category and string true are rejected.",
+  "challenge": "Add a separate status field with ok or needs_review.",
+  "review_risk": "Example object called a schema without constraints",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

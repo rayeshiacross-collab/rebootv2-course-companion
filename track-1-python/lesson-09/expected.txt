@@ -1,0 +1,3 @@
+Collect form submission
+Validate email
+Send confirmation

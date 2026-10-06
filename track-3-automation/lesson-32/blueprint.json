@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 32,
+  "working_focus": "Scheduling Calendar Automation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Validate title, start, end, IANA timezone and intended attendee using a test calendar.",
+  "acceptance": "End follows start; displayed local time matches intent; no duplicate event.",
+  "challenge": "Test daylight-saving ambiguity and conflict handling.",
+  "review_risk": "Naive date strings and duplicate invitations",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

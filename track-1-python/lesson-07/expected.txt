@@ -1,0 +1,4 @@
+avery@example.com
+validate
+transform
+send

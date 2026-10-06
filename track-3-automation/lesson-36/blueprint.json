@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 36,
+  "working_focus": "Human in the Loop Approval",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Bind approval to an exact draft version, approver and expiration. Execute only approved unchanged drafts.",
+  "acceptance": "Pending, rejected, edited and expired drafts do not execute.",
+  "challenge": "Approve once and test repeated callback delivery.",
+  "review_risk": "Stale approval authorizing new content",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

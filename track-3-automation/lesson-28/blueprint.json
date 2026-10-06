@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 28,
+  "working_focus": "Lead CRM Automation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Normalize email, search for an existing record, then update or create using an idempotency or uniqueness mechanism.",
+  "acceptance": "Repeated input results in one record, including concurrent retries.",
+  "challenge": "Preserve fields absent from the update request.",
+  "review_risk": "Search then create alone is not concurrency safe",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

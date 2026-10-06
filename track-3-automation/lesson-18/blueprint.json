@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 18,
+  "working_focus": "Automation Architecture",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Draw trigger, input, validation, AI or business logic, action, log and failure path for a request-routing workflow.",
+  "acceptance": "Explain every transition and identify who owns each failure.",
+  "challenge": "Replace one AI decision with deterministic validation.",
+  "review_risk": "Happy path only architecture",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

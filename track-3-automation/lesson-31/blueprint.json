@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 31,
+  "working_focus": "Support FAQ Automation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Route supported questions to approved knowledge; send ambiguous or account-risk requests to human review.",
+  "acceptance": "Unsupported answer is withheld; sensitive account action is not improvised.",
+  "challenge": "Evaluate routing on labeled examples.",
+  "review_risk": "Model confidence is not calibrated probability",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

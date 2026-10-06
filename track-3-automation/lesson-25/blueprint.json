@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 25,
+  "working_focus": "Email Automation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Build a draft using validated name, email and category. Test only with your own address before enabling sending.",
+  "acceptance": "Personalization is complete and recipient matches the test allowlist.",
+  "challenge": "Reject a blank email and prevent duplicate sends.",
+  "review_risk": "Unintended recipients or repeated send",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

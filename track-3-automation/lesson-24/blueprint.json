@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 24,
+  "working_focus": "Spreadsheet Data Automation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Map created_at, name, email, category and status into named columns in a test sheet.",
+  "acceptance": "One accepted record lands in the correct columns; replay does not add a duplicate.",
+  "challenge": "Reorder columns and verify named mapping remains correct.",
+  "review_risk": "Positional mapping drift",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

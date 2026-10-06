@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 41,
+  "working_focus": "Portfolio Completion and Next Project",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Assemble Python project, Git capstone, README, tests, automation diagram, demo, failure notes and security notes.",
+  "acceptance": "Reviewer reproduces results and verifies evidence for all three milestones.",
+  "challenge": "Choose one independent extension and document before and after.",
+  "review_risk": "Completion claim without evidence",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

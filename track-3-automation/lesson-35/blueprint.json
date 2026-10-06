@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 35,
+  "working_focus": "Failure Handling and Retries",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Classify transient, validation, authentication and rate-limit failures. Bound attempts and use provider retry guidance.",
+  "acceptance": "Transient failure can recover; invalid data stops; exhausted retries alert.",
+  "challenge": "Replay a failed send without duplicating side effects.",
+  "review_risk": "Retries of non-idempotent actions",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

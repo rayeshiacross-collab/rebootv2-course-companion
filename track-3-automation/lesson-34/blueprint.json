@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 34,
+  "working_focus": "Branching Filters and Routers",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Route high priority to urgent, otherwise sales to sales, otherwise standard.",
+  "acceptance": "billing/high is urgent; sales/low is sales; support/low is standard.",
+  "challenge": "Test sales/high to verify precedence.",
+  "review_risk": "Overlapping branches without precedence",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

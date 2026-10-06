@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 22,
+  "working_focus": "API Fundamentals",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Use a documented sandbox endpoint with timeout, status check and JSON parsing; install requests in the selected environment if used.",
+  "acceptance": "Successful response parses; timeout and error response take defined failure paths.",
+  "challenge": "Test a non-JSON response safely.",
+  "review_risk": "Placeholder api.example.com is not a runnable endpoint",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

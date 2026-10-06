@@ -1,0 +1,4 @@
+alice@example.com
+bob@example.com
+carol@example.com
+Accepted: 3

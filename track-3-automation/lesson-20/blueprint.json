@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 20,
+  "working_focus": "System Instructions and Guardrails",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Write instructions to use supplied facts, return a defined schema and route missing information to review. Enforce validation outside the model.",
+  "acceptance": "Incomplete input produces a review state and no downstream action.",
+  "challenge": "Test an input that asks the model to ignore the rules.",
+  "review_risk": "Prompt-only security and inconsistent sentinel format",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

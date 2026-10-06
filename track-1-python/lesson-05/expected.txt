@@ -1,0 +1,7 @@
+1. collect data
+2. process data
+3. send report
+3
+2
+1
+Go!

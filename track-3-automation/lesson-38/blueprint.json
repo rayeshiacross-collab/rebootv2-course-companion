@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 38,
+  "working_focus": "Logging and Observability",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Record run ID, timestamp, step, status, duration and a non-sensitive record reference.",
+  "acceptance": "Trace success and failure without passwords, tokens or unnecessary personal data.",
+  "challenge": "Correlate a retry with the original run.",
+  "review_risk": "Source sample lacks timestamp and step",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

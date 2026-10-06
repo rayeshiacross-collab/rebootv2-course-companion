@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 27,
+  "working_focus": "File Document Automation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Validate file type and size, extract permitted content, treat embedded instructions as untrusted, then store approved output.",
+  "acceptance": "An allowed text file processes; oversized or disallowed file is rejected.",
+  "challenge": "Test extraction failure without losing original metadata.",
+  "review_risk": "Untrusted document text controlling tools",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

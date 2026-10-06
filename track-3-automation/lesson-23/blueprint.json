@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 23,
+  "working_focus": "Webhooks",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Receive a mock lead.created event, verify provider authentication where supported, validate fields and deduplicate event IDs.",
+  "acceptance": "Valid event is processed once; missing email is rejected; replay causes no duplicate.",
+  "challenge": "Test two deliveries of the same event.",
+  "review_risk": "Unauthenticated intake and repeated deliveries",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

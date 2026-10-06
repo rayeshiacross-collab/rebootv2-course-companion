@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 39,
+  "working_focus": "Automation Testing and Evaluation",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Build held-out normal, empty, malformed, ambiguous and downstream-failure cases.",
+  "acceptance": "Compare actual versus expected outcomes; route empty input to review status.",
+  "challenge": "Repeat AI tests and record variability.",
+  "review_risk": "needs_review mixed into category enum",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}

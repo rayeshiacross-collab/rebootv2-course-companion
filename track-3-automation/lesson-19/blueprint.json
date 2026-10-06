@@ -1,0 +1,17 @@
+{
+  "lesson_slot": 19,
+  "working_focus": "Prompt Engineering",
+  "inventory_status": "unverified",
+  "format": "portable reference, not vendor import",
+  "task": "Classify a supplied request into sales, support, billing or other using explicit allowed labels.",
+  "acceptance": "Duplicate-charge text maps to billing; vague text routes to review by policy.",
+  "challenge": "Add three held-out messages and record actual outputs.",
+  "review_risk": "Single example mistaken for reliable performance",
+  "controls": {
+    "input_validation": "required before side effects",
+    "approval": "bind to exact draft when action requires review",
+    "idempotency": "persistent stable-key handling required for real side effects",
+    "logs": "no secrets or unnecessary personal data"
+  },
+  "vendor_execution_status": "not tested"
+}
