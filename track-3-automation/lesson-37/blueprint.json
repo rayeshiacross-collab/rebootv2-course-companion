@@ -1,17 +1,44 @@
 {
-  "lesson_slot": 37,
-  "working_focus": "Secrets Privacy and Security",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Read an environment variable using os.getenv and stop if absent. Keep .env ignored; use an explicit loader only if chosen.",
-  "acceptance": "Missing secret stops safely; logs and staged diff contain no secret.",
-  "challenge": "Explain provider rotation after exposure.",
-  "review_risk": "os.getenv does not automatically load .env",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 37,
+  "video_id": "s2u2it3ZNmQ",
+  "title": "Integrating AI With Your Existing Tools",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Integration event",
+  "required_fields": [
+    "event_id",
+    "source_fields",
+    "destination_schema"
+  ],
+  "field_mapping": {
+    "event_id": "validated_input.event_id",
+    "source_fields": "validated_input.source_fields",
+    "destination_schema": "validated_input.destination_schema"
   },
-  "vendor_execution_status": "not tested"
+  "action": "integration",
+  "output_fields": [
+    "mapped_payload",
+    "validation_errors"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Map fields explicitly; validate types and test a timeout and duplicate request.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "No live API keys; use environment secrets only in a reviewed deployment.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

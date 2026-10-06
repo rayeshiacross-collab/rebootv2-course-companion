@@ -1,0 +1,3 @@
+Task: Check consent, opt-out and approved channel before preparing a short reminder.
+Use only the supplied synthetic input and approved facts. Return fields: destination, body, suppressed. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

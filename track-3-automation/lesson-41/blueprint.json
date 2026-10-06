@@ -1,17 +1,46 @@
 {
-  "lesson_slot": 41,
-  "working_focus": "Portfolio Completion and Next Project",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Assemble Python project, Git capstone, README, tests, automation diagram, demo, failure notes and security notes.",
-  "acceptance": "Reviewer reproduces results and verifies evidence for all three milestones.",
-  "challenge": "Choose one independent extension and document before and after.",
-  "review_risk": "Completion claim without evidence",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 41,
+  "video_id": "I9NPqYdgH4I",
+  "title": "Staying Ahead \u2014 Your AI Automation Roadmap",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Course completion review",
+  "required_fields": [
+    "project",
+    "evidence",
+    "remaining_gaps",
+    "next_goal"
+  ],
+  "field_mapping": {
+    "project": "validated_input.project",
+    "evidence": "validated_input.evidence",
+    "remaining_gaps": "validated_input.remaining_gaps",
+    "next_goal": "validated_input.next_goal"
   },
-  "vendor_execution_status": "not tested"
+  "action": "roadmap",
+  "output_fields": [
+    "portfolio_checklist",
+    "next_milestone"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Review evidence, choose one next project and define a measurable acceptance check.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Completion is creator-issued, not accredited certification.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

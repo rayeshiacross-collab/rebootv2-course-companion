@@ -1,27 +1,35 @@
-# Practice 21: Structured AI Output and JSON
+# Lesson 21/41: Setting Up Your First AI Workflow
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/gM4RTfQDpK4) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Validate category, priority, summary and needs_human fields with required keys, types and enums before routing.
+## Hands-on task
+
+Pass a synthetic trigger through validate, transform, approve and record stages.
+
+## Reference workflow
+
+Trigger: Synthetic form submitted.
+
+Validate fields, classify intent, draft a response, hold for approval.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Malformed JSON, unknown category and string true are rejected.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Repeat event IDs must not duplicate an action.
 
-## Challenge
+## Continue
 
-Add a separate status field with ok or needs_review.
+[Previous lesson](https://youtu.be/STOYql6QL2A) · [Next lesson](https://youtu.be/CAGT6GDVvaY)
 
-## Troubleshoot
-
-Example object called a schema without constraints. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 20. Next: Lesson 22. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

@@ -1,27 +1,35 @@
-# Practice 26: Form Intake Automation
+# Lesson 26/41: Your AI Content Engine — The System
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/JQXHKivwrDQ) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Collect name, email, request and consent where needed. Reject missing email, blank request or absent required consent.
+## Hands-on task
+
+Turn one approved brief into a draft, review and distribution queue.
+
+## Reference workflow
+
+Trigger: Approved content brief.
+
+Create outline, draft and channel variants from the same approved facts.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Four fixtures exercise success and each rejection path.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Publish only after factual and rights checks.
 
-## Challenge
+## Continue
 
-Record a human-readable reason for rejection.
+[Previous lesson](https://youtu.be/y3GxeHyV-EM) · [Next lesson](https://youtu.be/mK9mZJQFnqs)
 
-## Troubleshoot
-
-Invalid fields passed downstream. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 18. Next: Lesson 27. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

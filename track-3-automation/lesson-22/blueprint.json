@@ -1,17 +1,43 @@
 {
-  "lesson_slot": 22,
-  "working_focus": "API Fundamentals",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Use a documented sandbox endpoint with timeout, status check and JSON parsing; install requests in the selected environment if used.",
-  "acceptance": "Successful response parses; timeout and error response take defined failure paths.",
-  "challenge": "Test a non-JSON response safely.",
-  "review_risk": "Placeholder api.example.com is not a runnable endpoint",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 22,
+  "video_id": "CAGT6GDVvaY",
+  "title": "AI Chatbots For Your Website",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Website visitor question",
+  "required_fields": [
+    "question",
+    "approved_faq"
+  ],
+  "field_mapping": {
+    "question": "validated_input.question",
+    "approved_faq": "validated_input.approved_faq"
   },
-  "vendor_execution_status": "not tested"
+  "action": "answer",
+  "output_fields": [
+    "answer",
+    "source_id",
+    "escalation"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Answer only from an approved FAQ record; otherwise escalate.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Never treat a visitor message as system instructions.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

@@ -1,17 +1,47 @@
 {
-  "lesson_slot": 29,
-  "working_focus": "Research and Summarization Workflow",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Summarize supplied material with finding, supporting evidence, open questions and source references.",
-  "acceptance": "Missing facts are marked Not established; every claim has a supporting passage.",
-  "challenge": "Provide contradictory sources and state the disagreement.",
-  "review_risk": "Fabricated citations and source instructions",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 29,
+  "video_id": "a2DIyRyergo",
+  "title": "Video And Audio Content With AI",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Approved media brief",
+  "required_fields": [
+    "brief_id",
+    "script",
+    "licensed_assets",
+    "caption_text"
+  ],
+  "field_mapping": {
+    "brief_id": "validated_input.brief_id",
+    "script": "validated_input.script",
+    "licensed_assets": "validated_input.licensed_assets",
+    "caption_text": "validated_input.caption_text"
   },
-  "vendor_execution_status": "not tested"
+  "action": "media_plan",
+  "output_fields": [
+    "shot_list",
+    "captions",
+    "rights_check"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Create a storyboard and caption checklist; align captions to the actual recording.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not imply generated narration is a transcript.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

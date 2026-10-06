@@ -1,17 +1,44 @@
 {
-  "lesson_slot": 25,
-  "working_focus": "Email Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Build a draft using validated name, email and category. Test only with your own address before enabling sending.",
-  "acceptance": "Personalization is complete and recipient matches the test allowlist.",
-  "challenge": "Reject a blank email and prevent duplicate sends.",
-  "review_risk": "Unintended recipients or repeated send",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 25,
+  "video_id": "y3GxeHyV-EM",
+  "title": "Managing Reviews And Reputation With AI",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "New review received",
+  "required_fields": [
+    "review_id",
+    "review_text",
+    "approved_facts"
+  ],
+  "field_mapping": {
+    "review_id": "validated_input.review_id",
+    "review_text": "validated_input.review_text",
+    "approved_facts": "validated_input.approved_facts"
   },
-  "vendor_execution_status": "not tested"
+  "action": "draft_reply",
+  "output_fields": [
+    "reply",
+    "escalation_reason"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Acknowledge the issue using known facts; route sensitive complaints to an owner.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not fabricate reviews, compensation or customer history.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

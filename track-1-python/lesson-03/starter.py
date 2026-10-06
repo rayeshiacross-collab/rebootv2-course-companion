@@ -1,2 +1,8 @@
-"""Exercise: Ask for name and practice hours. Convert hours to float, multiply by 60 and print the result."""
-raise NotImplementedError("Complete the exercise, then compare with solution.py")
+"""Lesson 03 learner starter. Implement the task in README.md."""
+
+def practice():
+    # TODO: implement the lesson task; compare with solution.py only after trying.
+    raise NotImplementedError("Complete the README exercise")
+
+if __name__ == "__main__":
+    practice()

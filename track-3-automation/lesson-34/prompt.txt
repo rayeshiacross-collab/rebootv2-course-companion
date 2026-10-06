@@ -1,0 +1,3 @@
+Task: Map each stage, owner, approval and failure path before implementation.
+Use only the supplied synthetic input and approved facts. Return fields: steps, decision_table, rollback. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

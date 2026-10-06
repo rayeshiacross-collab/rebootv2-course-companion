@@ -1,0 +1,3 @@
+Task: Calculate time burden; rank low-risk, repetitive tasks before sensitive tasks.
+Use only the supplied synthetic input and approved facts. Return fields: weekly_minutes, pilot_choice. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

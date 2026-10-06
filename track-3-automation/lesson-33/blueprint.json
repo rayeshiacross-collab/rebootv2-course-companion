@@ -1,17 +1,47 @@
 {
-  "lesson_slot": 33,
-  "working_focus": "Database Workspace Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Find by stable ID; update only intended fields; create only on an explicit missing-record rule.",
-  "acceptance": "Same name with different IDs remains separate; repeated update is safe.",
-  "challenge": "Reject an update without a stable ID.",
-  "review_risk": "Display name used as unique key",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 33,
+  "video_id": "FeyPmDjP84M",
+  "title": "Dashboards And Automated Reporting",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Reporting interval reached",
+  "required_fields": [
+    "period",
+    "accepted",
+    "rejected",
+    "duplicates"
+  ],
+  "field_mapping": {
+    "period": "validated_input.period",
+    "accepted": "validated_input.accepted",
+    "rejected": "validated_input.rejected",
+    "duplicates": "validated_input.duplicates"
   },
-  "vendor_execution_status": "not tested"
+  "action": "report",
+  "output_fields": [
+    "total",
+    "acceptance_rate",
+    "reconciliation"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Compute totals and ratios; distinguish zero denominator from zero performance.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not present sample metrics as channel or customer results.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

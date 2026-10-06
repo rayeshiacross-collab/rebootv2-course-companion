@@ -1,27 +1,35 @@
-# Practice 18: Automation Architecture
+# Lesson 18/41: What AI Automation Really Is
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/hdTeJy2eUPs) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Draw trigger, input, validation, AI or business logic, action, log and failure path for a request-routing workflow.
+## Hands-on task
+
+Compare a fixed rule to an AI decision; send uncertainty to review.
+
+## Reference workflow
+
+Trigger: Manual request received.
+
+Use a fixed rule for eligibility; use AI only to draft the explanation.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Explain every transition and identify who owns each failure.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Never let a model invent refund policy.
 
-## Challenge
+## Continue
 
-Replace one AI decision with deterministic validation.
+[Previous lesson](https://youtu.be/AGePQjS-4Ro) · [Next lesson](https://youtu.be/-EbvGaaua0w)
 
-## Troubleshoot
-
-Happy path only architecture. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 17. Next: Lesson 19. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

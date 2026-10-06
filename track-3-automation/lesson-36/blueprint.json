@@ -1,17 +1,45 @@
 {
-  "lesson_slot": 36,
-  "working_focus": "Human in the Loop Approval",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Bind approval to an exact draft version, approver and expiration. Execute only approved unchanged drafts.",
-  "acceptance": "Pending, rejected, edited and expired drafts do not execute.",
-  "challenge": "Approve once and test repeated callback delivery.",
-  "review_risk": "Stale approval authorizing new content",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 36,
+  "video_id": "hAGAU-mXb8U",
+  "title": "Custom GPTs And AI Assistants",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Assistant request",
+  "required_fields": [
+    "message",
+    "approved_knowledge",
+    "system_rules"
+  ],
+  "field_mapping": {
+    "message": "validated_input.message",
+    "approved_knowledge": "validated_input.approved_knowledge",
+    "system_rules": "validated_input.system_rules"
   },
-  "vendor_execution_status": "not tested"
+  "action": "assistant",
+  "output_fields": [
+    "response",
+    "citations",
+    "refusal_or_escalation"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Use bounded instructions and approved knowledge; test prompt injection.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not expose hidden instructions or secrets.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

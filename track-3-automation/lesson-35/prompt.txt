@@ -1,0 +1,3 @@
+Task: Design webhook, validation, router and logging stages; document field mappings.
+Use only the supplied synthetic input and approved facts. Return fields: success_route, review_route, error_route. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

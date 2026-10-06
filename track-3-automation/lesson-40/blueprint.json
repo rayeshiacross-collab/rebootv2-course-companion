@@ -1,17 +1,47 @@
 {
-  "lesson_slot": 40,
-  "working_focus": "End to End Automation Capstone",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Connect intake, validation, normalization, classification, routing, record update, draft, approval, send and logging.",
-  "acceptance": "Seven cases pass: success, missing field, ambiguity, duplicate, rejection, downstream failure and final recovery.",
-  "challenge": "Demonstrate restart without duplicate sends.",
-  "review_risk": "Disconnected happy-path demos",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 40,
+  "video_id": "L1dZlOv6ZjM",
+  "title": "Security, Privacy And Ethics",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Security review",
+  "required_fields": [
+    "fields",
+    "retention_days",
+    "roles",
+    "hostile_input"
+  ],
+  "field_mapping": {
+    "fields": "validated_input.fields",
+    "retention_days": "validated_input.retention_days",
+    "roles": "validated_input.roles",
+    "hostile_input": "validated_input.hostile_input"
   },
-  "vendor_execution_status": "not tested"
+  "action": "security",
+  "output_fields": [
+    "redactions",
+    "access_review",
+    "incidents"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Minimize fields, redact logs, test instruction injection and document retention.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Use synthetic examples; never commit credentials.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

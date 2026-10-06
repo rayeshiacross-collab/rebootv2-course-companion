@@ -1,0 +1,3 @@
+Task: Answer only from an approved FAQ record; otherwise escalate.
+Use only the supplied synthetic input and approved facts. Return fields: answer, source_id, escalation. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

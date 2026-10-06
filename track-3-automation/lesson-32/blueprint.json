@@ -1,17 +1,45 @@
 {
-  "lesson_slot": 32,
-  "working_focus": "Scheduling Calendar Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Validate title, start, end, IANA timezone and intended attendee using a test calendar.",
-  "acceptance": "End follows start; displayed local time matches intent; no duplicate event.",
-  "challenge": "Test daylight-saving ambiguity and conflict handling.",
-  "review_risk": "Naive date strings and duplicate invitations",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 32,
+  "video_id": "P0DeUubFaRc",
+  "title": "Data Entry And Document Processing",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Synthetic document received",
+  "required_fields": [
+    "document_id",
+    "text",
+    "required_fields"
+  ],
+  "field_mapping": {
+    "document_id": "validated_input.document_id",
+    "text": "validated_input.text",
+    "required_fields": "validated_input.required_fields"
   },
-  "vendor_execution_status": "not tested"
+  "action": "extract",
+  "output_fields": [
+    "fields",
+    "missing_fields",
+    "review_state"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Extract named fields and mark unknown values explicitly.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not guess missing identifiers or retain private documents.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

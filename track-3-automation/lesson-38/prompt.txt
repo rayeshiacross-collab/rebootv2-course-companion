@@ -1,0 +1,3 @@
+Task: Subtract pilot plus review time from baseline; report measured and estimated inputs separately.
+Use only the supplied synthetic input and approved facts. Return fields: net_minutes, cost, assumptions. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

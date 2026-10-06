@@ -1,17 +1,46 @@
 {
-  "lesson_slot": 19,
-  "working_focus": "Prompt Engineering",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Classify a supplied request into sales, support, billing or other using explicit allowed labels.",
-  "acceptance": "Duplicate-charge text maps to billing; vague text routes to review by policy.",
-  "challenge": "Add three held-out messages and record actual outputs.",
-  "review_risk": "Single example mistaken for reliable performance",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 19,
+  "video_id": "-EbvGaaua0w",
+  "title": "The Essential AI Tool Stack",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Tool evaluation requested",
+  "required_fields": [
+    "tool",
+    "monthly_cost",
+    "data_policy",
+    "required_feature"
+  ],
+  "field_mapping": {
+    "tool": "validated_input.tool",
+    "monthly_cost": "validated_input.monthly_cost",
+    "data_policy": "validated_input.data_policy",
+    "required_feature": "validated_input.required_feature"
   },
-  "vendor_execution_status": "not tested"
+  "action": "compare",
+  "output_fields": [
+    "approved_options",
+    "rejection_reason"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Compare a local script, a spreadsheet and a workflow tool against the same task.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Reject tools without an acceptable data policy.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

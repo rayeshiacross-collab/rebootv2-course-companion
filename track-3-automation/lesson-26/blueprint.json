@@ -1,17 +1,47 @@
 {
-  "lesson_slot": 26,
-  "working_focus": "Form Intake Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Collect name, email, request and consent where needed. Reject missing email, blank request or absent required consent.",
-  "acceptance": "Four fixtures exercise success and each rejection path.",
-  "challenge": "Record a human-readable reason for rejection.",
-  "review_risk": "Invalid fields passed downstream",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 26,
+  "video_id": "JQXHKivwrDQ",
+  "title": "Your AI Content Engine \u2014 The System",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Approved content brief",
+  "required_fields": [
+    "brief_id",
+    "audience",
+    "facts",
+    "channels"
+  ],
+  "field_mapping": {
+    "brief_id": "validated_input.brief_id",
+    "audience": "validated_input.audience",
+    "facts": "validated_input.facts",
+    "channels": "validated_input.channels"
   },
-  "vendor_execution_status": "not tested"
+  "action": "content_pipeline",
+  "output_fields": [
+    "outline",
+    "draft",
+    "review_queue"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Create outline, draft and channel variants from the same approved facts.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Publish only after factual and rights checks.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

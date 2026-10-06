@@ -1,0 +1,3 @@
+Task: Map fields explicitly; validate types and test a timeout and duplicate request.
+Use only the supplied synthetic input and approved facts. Return fields: mapped_payload, validation_errors. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

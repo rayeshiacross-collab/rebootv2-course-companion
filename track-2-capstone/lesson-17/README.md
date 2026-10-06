@@ -1,27 +1,26 @@
-# Practice 17: GitHub Portfolio and Capstone Handoff
+# Lesson 17/41: From Idea to Working App: Complete Python Capstone Walkthrough
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/AGePQjS-4Ro) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Inspect staged files, push to the exact repository URL and write setup, usage, tests, limitations and example output in README.
+## Hands-on task
 
-## Verify
+Run a complete sample input through the capstone and show the resulting output.
 
-A clean checkout can reproduce the demonstration without secrets.
+## Companion
 
-## Challenge
+Complete [DEMO_AND_REVIEW.md](../DEMO_AND_REVIEW.md). The shared CSV-to-JSON capstone is a separate synthetic practice project supporting this topic.
 
-Review one issue, fix it and commit separately.
+```text
+python track-2-capstone/src/app.py --input track-2-capstone/fixtures/leads.csv --output output/leads.json
+python -m unittest discover -s tests -v
+```
 
-## Troubleshoot
+Expected first run: accepted=2, rejected=1, duplicates=1. A repeated run refuses to overwrite; inspect the existing output before deliberately using `--overwrite`.
 
-Public code sharing before security review. Explain the expected result and use the checks before moving on.
+## Continue
 
-## Continuity
+[Previous lesson](https://youtu.be/c_j539EXAkM) · [Next lesson](https://youtu.be/hdTeJy2eUPs)
 
-Prerequisite practice: 16. Next: Lesson 18. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Working project
-
-Use [the capstone](../README.md), its fixtures and the root test suite.
+If a video is not released yet, save the master Course and complete the exercise before returning.

@@ -1,0 +1,3 @@
+Task: Minimize fields, redact logs, test instruction injection and document retention.
+Use only the supplied synthetic input and approved facts. Return fields: redactions, access_review, incidents. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

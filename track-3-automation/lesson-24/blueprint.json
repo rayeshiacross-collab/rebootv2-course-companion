@@ -1,17 +1,49 @@
 {
-  "lesson_slot": 24,
-  "working_focus": "Spreadsheet Data Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Map created_at, name, email, category and status into named columns in a test sheet.",
-  "acceptance": "One accepted record lands in the correct columns; replay does not add a duplicate.",
-  "challenge": "Reorder columns and verify named mapping remains correct.",
-  "review_risk": "Positional mapping drift",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 24,
+  "video_id": "FZa7f6789ZI",
+  "title": "SMS And WhatsApp Automation",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Opted-in message event",
+  "required_fields": [
+    "event_id",
+    "phone",
+    "consent",
+    "opted_out",
+    "text"
+  ],
+  "field_mapping": {
+    "event_id": "validated_input.event_id",
+    "phone": "validated_input.phone",
+    "consent": "validated_input.consent",
+    "opted_out": "validated_input.opted_out",
+    "text": "validated_input.text"
   },
-  "vendor_execution_status": "not tested"
+  "action": "draft_sms",
+  "output_fields": [
+    "destination",
+    "body",
+    "suppressed"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Check consent, opt-out and approved channel before preparing a short reminder.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Never infer consent from possession of a phone number.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

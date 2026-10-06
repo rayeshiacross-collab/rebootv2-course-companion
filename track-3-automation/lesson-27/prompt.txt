@@ -1,0 +1,3 @@
+Task: Draft an outline and article tied to supplied sources; flag unsourced claims.
+Use only the supplied synthetic input and approved facts. Return fields: outline, draft, claims_to_check. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

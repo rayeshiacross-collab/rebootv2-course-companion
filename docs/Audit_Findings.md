@@ -1,3 +1,5 @@
+> Historical pre-remediation snapshot, October 6, 2026. See COURSE_MAP.md and IMPLEMENTATION_STATUS.md for current companion status.
+
 # Rebootv2 live metadata audit — October 6, 2026
 
 Source: signed-in YouTube Studio, Rebootv2 channel UC-PykpH4s2lL66C_ukfYj8Q. Inspected all 68 entries in the Videos tab and both pages of the 41-item master Course. This is a metadata and continuity audit, not a footage or transcript review.

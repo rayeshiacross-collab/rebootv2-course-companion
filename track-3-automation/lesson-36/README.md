@@ -1,27 +1,35 @@
-# Practice 36: Human in the Loop Approval
+# Lesson 36/41: Custom GPTs And AI Assistants
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/hAGAU-mXb8U) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Bind approval to an exact draft version, approver and expiration. Execute only approved unchanged drafts.
+## Hands-on task
+
+Test assistant instructions with supported, unsupported and malicious requests.
+
+## Reference workflow
+
+Trigger: Assistant request.
+
+Use bounded instructions and approved knowledge; test prompt injection.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Pending, rejected, edited and expired drafts do not execute.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Do not expose hidden instructions or secrets.
 
-## Challenge
+## Continue
 
-Approve once and test repeated callback delivery.
+[Previous lesson](https://youtu.be/Ci02vAe0icM) · [Next lesson](https://youtu.be/s2u2it3ZNmQ)
 
-## Troubleshoot
-
-Stale approval authorizing new content. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 30. Next: Lesson 37. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

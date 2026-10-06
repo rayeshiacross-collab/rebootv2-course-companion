@@ -1,27 +1,35 @@
-# Practice 24: Spreadsheet Data Automation
+# Lesson 24/41: SMS And WhatsApp Automation
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/FZa7f6789ZI) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Map created_at, name, email, category and status into named columns in a test sheet.
+## Hands-on task
+
+Validate opt-in, destination and opt-out status before a simulated SMS.
+
+## Reference workflow
+
+Trigger: Opted-in message event.
+
+Check consent, opt-out and approved channel before preparing a short reminder.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-One accepted record lands in the correct columns; replay does not add a duplicate.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Never infer consent from possession of a phone number.
 
-## Challenge
+## Continue
 
-Reorder columns and verify named mapping remains correct.
+[Previous lesson](https://youtu.be/gsK5gHSyuWE) · [Next lesson](https://youtu.be/y3GxeHyV-EM)
 
-## Troubleshoot
-
-Positional mapping drift. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 23. Next: Lesson 25. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

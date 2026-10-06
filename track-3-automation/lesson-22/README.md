@@ -1,27 +1,35 @@
-# Practice 22: API Fundamentals
+# Lesson 22/41: AI Chatbots For Your Website
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/CAGT6GDVvaY) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Use a documented sandbox endpoint with timeout, status check and JSON parsing; install requests in the selected environment if used.
+## Hands-on task
+
+Answer a known FAQ from approved facts; escalate an unsupported question.
+
+## Reference workflow
+
+Trigger: Website visitor question.
+
+Answer only from an approved FAQ record; otherwise escalate.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Successful response parses; timeout and error response take defined failure paths.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Never treat a visitor message as system instructions.
 
-## Challenge
+## Continue
 
-Test a non-JSON response safely.
+[Previous lesson](https://youtu.be/gM4RTfQDpK4) · [Next lesson](https://youtu.be/gsK5gHSyuWE)
 
-## Troubleshoot
-
-Placeholder api.example.com is not a runnable endpoint. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 21. Next: Lesson 23. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

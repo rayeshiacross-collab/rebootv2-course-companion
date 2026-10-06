@@ -1,17 +1,46 @@
 {
-  "lesson_slot": 20,
-  "working_focus": "System Instructions and Guardrails",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Write instructions to use supplied facts, return a defined schema and route missing information to review. Enforce validation outside the model.",
-  "acceptance": "Incomplete input produces a review state and no downstream action.",
-  "challenge": "Test an input that asks the model to ignore the rules.",
-  "review_risk": "Prompt-only security and inconsistent sentinel format",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 20,
+  "video_id": "STOYql6QL2A",
+  "title": "Finding Your Top 3 Automation Opportunities",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Weekly task inventory",
+  "required_fields": [
+    "task",
+    "minutes_per_run",
+    "runs_per_week",
+    "risk"
+  ],
+  "field_mapping": {
+    "task": "validated_input.task",
+    "minutes_per_run": "validated_input.minutes_per_run",
+    "runs_per_week": "validated_input.runs_per_week",
+    "risk": "validated_input.risk"
   },
-  "vendor_execution_status": "not tested"
+  "action": "rank",
+  "output_fields": [
+    "weekly_minutes",
+    "pilot_choice"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Calculate time burden; rank low-risk, repetitive tasks before sensitive tasks.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not invent measured savings.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

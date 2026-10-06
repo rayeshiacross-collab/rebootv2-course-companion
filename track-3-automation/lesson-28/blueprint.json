@@ -1,17 +1,47 @@
 {
-  "lesson_slot": 28,
-  "working_focus": "Lead CRM Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Normalize email, search for an existing record, then update or create using an idempotency or uniqueness mechanism.",
-  "acceptance": "Repeated input results in one record, including concurrent retries.",
-  "challenge": "Preserve fields absent from the update request.",
-  "review_risk": "Search then create alone is not concurrency safe",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 28,
+  "video_id": "Imbo1i2HQ5A",
+  "title": "Social Media Content At Scale",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Approved master message",
+  "required_fields": [
+    "message_id",
+    "text",
+    "platforms",
+    "limits"
+  ],
+  "field_mapping": {
+    "message_id": "validated_input.message_id",
+    "text": "validated_input.text",
+    "platforms": "validated_input.platforms",
+    "limits": "validated_input.limits"
   },
-  "vendor_execution_status": "not tested"
+  "action": "social_variants",
+  "output_fields": [
+    "platform",
+    "copy",
+    "character_count"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Adapt wording for each supplied platform limit and queue review.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not silently post or create unsupported promises.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

@@ -18,27 +18,67 @@ app = load("capstone", "track-2-capstone/src/app.py")
 sim = load("simulator", "track-3-automation/simulator.py")
 
 class PythonExamples(unittest.TestCase):
-    def run_lesson(self, number, supplied=None):
-        source = ROOT / f"track-1-python/lesson-{number:02d}"
+    def lesson(self, n):
+        return load(f"lesson{n}", f"track-1-python/lesson-{n:02}/solution.py")
+    def test_all_examples_execute(self):
+        for n in range(1,13):
+            with self.subTest(lesson=n), tempfile.TemporaryDirectory() as tmp:
+                source=ROOT/f"track-1-python/lesson-{n:02}"
+                result=subprocess.run([sys.executable,str(source/'solution.py')],input=(source/'input.txt').read_text(),cwd=tmp,text=True,capture_output=True,timeout=10)
+                self.assertEqual(result.returncode,0,result.stderr)
+                self.assertTrue(result.stdout or result.stderr)
+    def test_scope_rejects_blank_and_overscope(self):
+        m=self.lesson(1);good=dict(user='Reader',problem='Search',input='Name',output='Card',features=['Search'])
+        self.assertEqual(m.validate_brief(good),'Scope ready')
+        for override in [dict(user=''),dict(features=[]),dict(features=['a']*4),dict(features=[''])]:
+            with self.subTest(override=override),self.assertRaises(ValueError):m.validate_brief(dict(good,**override))
+    def test_decomposition(self):
+        m=self.lesson(2);self.assertEqual(len(m.pseudocode(m.STEPS).splitlines()),6)
+        with self.assertRaises(ValueError):m.pseudocode([''])
+    def test_greeting_validation(self):
+        m=self.lesson(3);self.assertIn('Taylor',m.greet(' Taylor ','Nova'))
+        with self.assertRaises(ValueError):m.greet(' ','Nova')
+    def test_function_returns_record(self):
+        m=self.lesson(4);records=[dict(name='Nova')]
+        self.assertEqual(m.find_character(' NOVA ',records),records[0]);self.assertIsNone(m.find_character('',records))
+    def test_branch_paths(self):
+        m=self.lesson(5);names=['Nova','Nora']
+        for q,expected in [('nova','Found: Nova'),('no','Suggestions: Nova, Nora'),('','Enter a name'),('zzz','Not found')]:
+            self.assertEqual(m.search_characters(q,names),expected)
+    def test_loop_search(self):
+        m=self.lesson(6);self.assertEqual(m.search(' NOVA ',m.RECORDS),'Nova');self.assertEqual(m.search('',m.RECORDS),'Not found')
+    def test_dictionary_duplicates(self):
+        m=self.lesson(7)
+        with self.assertRaises(ValueError):m.build_index([dict(name='Nova'),dict(name=' NOVA ')])
+        with self.assertRaises(ValueError):m.build_index([dict(name='')])
+    def test_json_roundtrip_and_shape(self):
+        m=self.lesson(8)
         with tempfile.TemporaryDirectory() as tmp:
-            folder = Path(tmp)
-            for path in source.glob("*.py"):
-                shutil.copyfile(path, folder/path.name)
-            result = subprocess.run([sys.executable, "solution.py"], cwd=folder,
-                input=(source/"input.txt").read_text() if supplied is None else supplied,
-                text=True, capture_output=True, timeout=10)
-            self.assertEqual(result.returncode, 0, result.stderr)
-            return result.stdout
-    def test_all_solutions(self):
-        for number in range(1,13):
-            with self.subTest(lesson=number):
-                expected=(ROOT/f"track-1-python/lesson-{number:02d}/expected.txt").read_text().strip()
-                self.assertIn(expected, self.run_lesson(number))
-    def test_condition_boundaries(self):
-        for score, expected in [(90,"Excellent"),(70,"Passed"),(69,"Keep practicing")]:
-            with self.subTest(score=score):self.assertIn(expected,self.run_lesson(4,f"{score}\n"))
-    def test_bad_number(self):self.assertIn("valid whole number",self.run_lesson(10,"hello\n"))
-    def test_zero(self):self.assertIn("cannot be zero",self.run_lesson(10,"0\n"))
+            p=Path(tmp)/'data.json';records=[dict(name='Nova')];m.save_records(p,records);self.assertEqual(m.load_records(p),records)
+            p.write_text('{}')
+            with self.assertRaises(ValueError):m.load_records(p)
+    def test_error_recovery(self):
+        m=self.lesson(9);self.assertEqual(m.positive_count('3'),3);self.assertEqual(m.positive_count('0'),'Enter a positive number');self.assertEqual(m.positive_count('bad'),'Enter a whole number')
+        with tempfile.TemporaryDirectory() as tmp:
+            p=Path(tmp)/'missing';self.assertEqual(m.read_json(p),'Create the data file first');p.write_text('{');self.assertEqual(m.read_json(p),'Repair the JSON syntax')
+    def test_debugging_regressions(self):
+        m=self.lesson(10);words=['Nova','Nora','Orion']
+        for q,want in [('',[]),('NOVA',['Nova']),(' nova ',['Nova']),('missing',[]),('no',['Nova','Nora'])]:self.assertEqual(m.find_word(q,words),want)
+    def test_menu_routes(self):
+        m=self.lesson(11)
+        for q,want in [('1','Nova'),('x','Choose 1 or q'),(' Q ','Goodbye')]:self.assertEqual(m.route(q,['Nova']),want)
+    def test_lesson_twelve_search(self):
+        m=self.lesson(12);self.assertEqual(m.find_name(' NOVA ',['Nova']),'Nova');self.assertIsNone(m.find_name('', ['Nova']))
+
+class AutomationReferences(unittest.TestCase):
+    def test_all_topic_packs_complete(self):
+        for n in range(18,42):
+            with self.subTest(lesson=n):
+                p=ROOT/f'track-3-automation/lesson-{n:02}'
+                b=json.loads((p/'blueprint.json').read_text());self.assertEqual(b['lesson'],n)
+                self.assertTrue(b['required_fields']);self.assertEqual(set(b['required_fields']),set(b['field_mapping']))
+                self.assertEqual(len(json.loads((p/'test-data.json').read_text())['cases']),4)
+                self.assertTrue((p/'prompt.txt').read_text().strip());self.assertTrue((p/'system-instructions.txt').read_text().strip())
 
 class Capstone(unittest.TestCase):
     def test_normalizes_without_recasing_name(self):

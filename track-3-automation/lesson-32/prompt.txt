@@ -1,0 +1,3 @@
+Task: Extract named fields and mark unknown values explicitly.
+Use only the supplied synthetic input and approved facts. Return fields: fields, missing_fields, review_state. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

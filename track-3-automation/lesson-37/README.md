@@ -1,27 +1,35 @@
-# Practice 37: Secrets Privacy and Security
+# Lesson 37/41: Integrating AI With Your Existing Tools
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/s2u2it3ZNmQ) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Read an environment variable using os.getenv and stop if absent. Keep .env ignored; use an explicit loader only if chosen.
+## Hands-on task
+
+Map source fields to destination fields and handle an API timeout safely.
+
+## Reference workflow
+
+Trigger: Integration event.
+
+Map fields explicitly; validate types and test a timeout and duplicate request.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Missing secret stops safely; logs and staged diff contain no secret.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. No live API keys; use environment secrets only in a reviewed deployment.
 
-## Challenge
+## Continue
 
-Explain provider rotation after exposure.
+[Previous lesson](https://youtu.be/hAGAU-mXb8U) · [Next lesson](https://youtu.be/XnRWq8_ESmA)
 
-## Troubleshoot
-
-os.getenv does not automatically load .env. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 13. Next: Lesson 38. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

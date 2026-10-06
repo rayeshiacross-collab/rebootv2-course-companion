@@ -1,12 +1,11 @@
-# Repository validation
+# Validation — version 0.2.0
 
-October 6, 2026 — companion version 0.1.0
+October 6, 2026, Python 3.12.14.
 
-- 19 unittest methods passed on Python 3.12.14, including twelve solution executions and branch/error subcases.
-- Capstone checks passed for normalization, blank/type rejection, duplicate handling, malformed CSV headers, JSON persistence and overwrite protection.
-- Simulator checks passed for approval, changed drafts, ambiguous and malformed decisions, failed service recovery, duplicate suppression and minimal logs.
-- Simulator command-line demonstration passed.
-- 41 provisional lesson guides, 12 runnable solutions and 24 reference blueprint JSON files are present.
-- Relative Markdown links resolve; JSON files parse; ZIP integrity passed.
+- 29 unittest methods passed, including all twelve solution executions and boundary/error cases.
+- Capstone normalization, validation, duplicate handling, JSON persistence and overwrite protection passed.
+- Offline controls cover approval, changed drafts, ambiguous decisions, service failure and duplicate suppression.
+- All 41 lesson guides, twelve captured RUN_RESULT.txt files and 24 concrete synthetic test-data files are present.
+- JSON parsing, local Markdown link checks and ZIP integrity passed during packaging.
 
-The test environment used a workspace temporary directory because the sandbox's system temporary directory was not writable. No external services were called. Footage alignment, provider integrations, other Python versions, production readiness and licensing are not verified. Repository destination: https://github.com/rayeshiacross-collab/rebootv2-course-companion (private). The local folder is initialized as a Git repository; the ZIP contains source only, without Git internals or caches.
+No live provider calls were made. Automation blueprints are portable teaching references, not tested vendor imports. Files contain synthetic data. Local tests use a writable workspace temporary folder. Starter files are intentionally incomplete learner exercises.

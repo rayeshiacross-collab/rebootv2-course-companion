@@ -1,17 +1,50 @@
 {
-  "lesson_slot": 31,
-  "working_focus": "Support FAQ Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Route supported questions to approved knowledge; send ambiguous or account-risk requests to human review.",
-  "acceptance": "Unsupported answer is withheld; sensitive account action is not improvised.",
-  "challenge": "Evaluate routing on labeled examples.",
-  "review_risk": "Model confidence is not calibrated probability",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 31,
+  "video_id": "yguls6WAqy0",
+  "title": "Invoicing, Billing And Expense Tracking",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Invoice draft received",
+  "required_fields": [
+    "invoice_id",
+    "items",
+    "quantity",
+    "unit_price",
+    "tax"
+  ],
+  "field_mapping": {
+    "invoice_id": "validated_input.invoice_id",
+    "items": "validated_input.items",
+    "quantity": "validated_input.quantity",
+    "unit_price": "validated_input.unit_price",
+    "tax": "validated_input.tax"
   },
-  "vendor_execution_status": "not tested"
+  "action": "invoice_review",
+  "output_fields": [
+    "subtotal",
+    "tax",
+    "total",
+    "duplicate"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Recalculate amounts using decimal arithmetic; flag duplicates and stage review.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "No payment, financial advice or bank credentials in the exercise.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

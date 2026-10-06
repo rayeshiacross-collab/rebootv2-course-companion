@@ -1,27 +1,30 @@
-# Practice 03: Input Output and Basic Operators
+# Lesson 03/41: Your First Python Program That Actually Does Something
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/Te9pWZLUc_w) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Ask for name and practice hours. Convert hours to float, multiply by 60 and print the result.
+## Hands-on task
 
-## Verify
+Run a welcome bot with name and character inputs; show the greeting and blank-input handling.
 
-Taylor and 1.5 produce Taylor, you practiced for 90 minutes.
+## Run and verify
 
-## Challenge
+From the repository root:
 
-Calculate two numbers; explain what happens when the divisor is zero.
+```text
+python track-1-python/lesson-03/solution.py
+python -m unittest discover -s tests -v
+```
 
-## Troubleshoot
+Start with `starter.py`; use `solution.py` for comparison. Inputs for interactive lessons are in `input.txt`. The captured reference output is in `RUN_RESULT.txt`. Test an ordinary case, a blank or missing case, and a boundary case. For lessons 01–02, complete the planning worksheet before using the small validator/pseudocode example.
 
-Input is text until converted. Explain the expected result and use the checks before moving on.
+## Independent exercise
 
-## Continuity
+Use your own fictional character names and add one edge case. Record the input, expected result, actual result and correction.
 
-Prerequisite practice: 2. Next: Lesson 04. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
+## Continue
 
-## Run
+[Previous lesson](https://youtu.be/9aXQdxBc5Jw) · [Next lesson](https://youtu.be/7eBXAdz285o)
 
-From this lesson folder: `python solution.py`. Type the values in input.txt if it is not empty. Compare to expected.txt; input prompts may precede output. Use a scratch copy for file-writing lessons.
+If a video is not released yet, save the master Course and complete the exercise before returning.

@@ -1,0 +1,3 @@
+Task: Review evidence, choose one next project and define a measurable acceptance check.
+Use only the supplied synthetic input and approved facts. Return fields: portfolio_checklist, next_milestone. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

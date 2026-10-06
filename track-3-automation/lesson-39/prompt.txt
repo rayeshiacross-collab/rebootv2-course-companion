@@ -1,0 +1,3 @@
+Task: Assign least-privilege roles, backup ownership and a rollback exercise.
+Use only the supplied synthetic input and approved facts. Return fields: role_matrix, runbook, escalation. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

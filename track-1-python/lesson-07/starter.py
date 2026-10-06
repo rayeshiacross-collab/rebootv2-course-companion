@@ -1,2 +1,8 @@
-"""Exercise: Create a customer dictionary with name, email and active. Print its email; iterate a list of validate, transform and send."""
-raise NotImplementedError("Complete the exercise, then compare with solution.py")
+"""Lesson 07 learner starter. Implement the task in README.md."""
+
+def practice():
+    # TODO: implement the lesson task; compare with solution.py only after trying.
+    raise NotImplementedError("Complete the README exercise")
+
+if __name__ == "__main__":
+    practice()

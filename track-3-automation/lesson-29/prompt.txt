@@ -1,0 +1,3 @@
+Task: Create a storyboard and caption checklist; align captions to the actual recording.
+Use only the supplied synthetic input and approved facts. Return fields: shot_list, captions, rights_check. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

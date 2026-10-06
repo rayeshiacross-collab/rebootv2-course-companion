@@ -1,0 +1,3 @@
+Task: Prepare a reply with the approved template; queue a follow-up only after approval.
+Use only the supplied synthetic input and approved facts. Return fields: recipient, subject, body, approved_digest. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

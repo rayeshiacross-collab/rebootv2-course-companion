@@ -1,27 +1,26 @@
-# Practice 15: Capstone MVP Build
+# Lesson 15/41: How to Finish Your Coding Project and Put It on GitHub
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/d6Cn-dw6i7c) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Create src/__init__.py and src/app.py. Implement normalize_record with trimmed name and lowercase trimmed email.
+## Hands-on task
 
-## Verify
+Clean code, add docstrings and README, run checks and prepare a 30-second demo.
 
-Alex Smith and alex@example.com appear for padded mixed-case inputs.
+## Companion
 
-## Challenge
+Complete [README_TEMPLATE.md](../README_TEMPLATE.md). The shared CSV-to-JSON capstone is a separate synthetic practice project supporting this topic.
 
-Reject blank name or email with a clear error.
+```text
+python track-2-capstone/src/app.py --input track-2-capstone/fixtures/leads.csv --output output/leads.json
+python -m unittest discover -s tests -v
+```
 
-## Troubleshoot
+Expected first run: accepted=2, rejected=1, duplicates=1. A repeated run refuses to overwrite; inspect the existing output before deliberately using `--overwrite`.
 
-Reported title mismatch and missing input checks. Explain the expected result and use the checks before moving on.
+## Continue
 
-## Continuity
+[Previous lesson](https://youtu.be/Xgz3Qlu_lAY) · [Next lesson](https://youtu.be/c_j539EXAkM)
 
-Prerequisite practice: 14. Next: Lesson 16. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Working project
-
-Use [the capstone](../README.md), its fixtures and the root test suite.
+If a video is not released yet, save the master Course and complete the exercise before returning.

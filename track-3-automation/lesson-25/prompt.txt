@@ -1,0 +1,3 @@
+Task: Acknowledge the issue using known facts; route sensitive complaints to an owner.
+Use only the supplied synthetic input and approved facts. Return fields: reply, escalation_reason. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

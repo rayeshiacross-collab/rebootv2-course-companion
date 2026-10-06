@@ -1,17 +1,44 @@
 {
-  "lesson_slot": 18,
-  "working_focus": "Automation Architecture",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Draw trigger, input, validation, AI or business logic, action, log and failure path for a request-routing workflow.",
-  "acceptance": "Explain every transition and identify who owns each failure.",
-  "challenge": "Replace one AI decision with deterministic validation.",
-  "review_risk": "Happy path only architecture",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 18,
+  "video_id": "hdTeJy2eUPs",
+  "title": "What AI Automation Really Is",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Manual request received",
+  "required_fields": [
+    "request_id",
+    "request_text",
+    "known_rule"
+  ],
+  "field_mapping": {
+    "request_id": "validated_input.request_id",
+    "request_text": "validated_input.request_text",
+    "known_rule": "validated_input.known_rule"
   },
-  "vendor_execution_status": "not tested"
+  "action": "route",
+  "output_fields": [
+    "rule_result",
+    "review_required"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Use a fixed rule for eligibility; use AI only to draft the explanation.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Never let a model invent refund policy.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

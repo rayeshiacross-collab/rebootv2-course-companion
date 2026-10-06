@@ -1,17 +1,45 @@
 {
-  "lesson_slot": 35,
-  "working_focus": "Failure Handling and Retries",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Classify transient, validation, authentication and rate-limit failures. Bound attempts and use provider retry guidance.",
-  "acceptance": "Transient failure can recover; invalid data stops; exhausted retries alert.",
-  "challenge": "Replay a failed send without duplicating side effects.",
-  "review_risk": "Retries of non-idempotent actions",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 35,
+  "video_id": "Ci02vAe0icM",
+  "title": "Building Multi-Step Automations With Make",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Make scenario prototype",
+  "required_fields": [
+    "event_id",
+    "input_fields",
+    "route_rule"
+  ],
+  "field_mapping": {
+    "event_id": "validated_input.event_id",
+    "input_fields": "validated_input.input_fields",
+    "route_rule": "validated_input.route_rule"
   },
-  "vendor_execution_status": "not tested"
+  "action": "router",
+  "output_fields": [
+    "success_route",
+    "review_route",
+    "error_route"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Design webhook, validation, router and logging stages; document field mappings.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Reference JSON is not a verified Make import.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

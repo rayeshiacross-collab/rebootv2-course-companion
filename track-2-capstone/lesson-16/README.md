@@ -1,27 +1,26 @@
-# Practice 16: Testing QA and Refactoring
+# Lesson 16/41: Finish Your Coding Project — Capstone QA, Demo and Portfolio Handoff
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/c_j539EXAkM) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Test normalization, blank rejection and mixed case. Run test functions using a test runner or call them explicitly.
+## Hands-on task
 
-## Verify
+Demonstrate capstone QA evidence, README reproducibility and a portfolio handoff.
 
-Tests execute and pass; a deliberate wrong expected value fails.
+## Companion
 
-## Challenge
+Complete [QA_CHECKLIST.md](../QA_CHECKLIST.md). The shared CSV-to-JSON capstone is a separate synthetic practice project supporting this topic.
 
-Refactor once and rerun all tests.
+```text
+python track-2-capstone/src/app.py --input track-2-capstone/fixtures/leads.csv --output output/leads.json
+python -m unittest discover -s tests -v
+```
 
-## Troubleshoot
+Expected first run: accepted=2, rejected=1, duplicates=1. A repeated run refuses to overwrite; inspect the existing output before deliberately using `--overwrite`.
 
-Defining a test function alone does not run it. Explain the expected result and use the checks before moving on.
+## Continue
 
-## Continuity
+[Previous lesson](https://youtu.be/d6Cn-dw6i7c) · [Next lesson](https://youtu.be/AGePQjS-4Ro)
 
-Prerequisite practice: 15. Next: Lesson 17. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Working project
-
-Use [the capstone](../README.md), its fixtures and the root test suite.
+If a video is not released yet, save the master Course and complete the exercise before returning.

@@ -1,17 +1,49 @@
 {
-  "lesson_slot": 30,
-  "working_focus": "Content Workflow",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Define idea, brief, draft, review, approval and publish states. Require explicit approval before publication.",
-  "acceptance": "Draft, rejected and pending states cannot publish.",
-  "challenge": "Invalidate approval when the draft changes.",
-  "review_risk": "Boolean approval detached from draft version",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 30,
+  "video_id": "1sIApWK0T00",
+  "title": "AI-Powered Scheduling And Calendar Management",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Booking request",
+  "required_fields": [
+    "request_id",
+    "start_iso",
+    "end_iso",
+    "timezone",
+    "busy_slots"
+  ],
+  "field_mapping": {
+    "request_id": "validated_input.request_id",
+    "start_iso": "validated_input.start_iso",
+    "end_iso": "validated_input.end_iso",
+    "timezone": "validated_input.timezone",
+    "busy_slots": "validated_input.busy_slots"
   },
-  "vendor_execution_status": "not tested"
+  "action": "schedule",
+  "output_fields": [
+    "conflict",
+    "proposed_slot",
+    "review_state"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Compare timezone-aware intervals and reject overlaps before staging an event.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Never create an event with an unknown timezone.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

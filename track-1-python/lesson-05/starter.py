@@ -1,2 +1,8 @@
-"""Exercise: Enumerate collect data, process data and send report starting at 1. Then count down from 3 with a while loop."""
-raise NotImplementedError("Complete the exercise, then compare with solution.py")
+"""Lesson 05 learner starter. Implement the task in README.md."""
+
+def practice():
+    # TODO: implement the lesson task; compare with solution.py only after trying.
+    raise NotImplementedError("Complete the README exercise")
+
+if __name__ == "__main__":
+    practice()

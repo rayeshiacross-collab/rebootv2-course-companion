@@ -1,27 +1,30 @@
-# Practice 08: Strings and Data Cleaning
+# Lesson 08/41: Save Python Data with JSON — Your Program Remembers After It Closes
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/gOtNZ4n3NJw) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Apply strip().lower() to the string with spaces around USER@Example.COM.
+## Hands-on task
 
-## Verify
+Save character records as JSON, restart, reload and compare records.
 
-Result is user@example.com.
+## Run and verify
 
-## Challenge
+From the repository root:
 
-Normalize Alex.SMITH@EXAMPLE.com with surrounding spaces.
+```text
+python track-1-python/lesson-08/solution.py
+python -m unittest discover -s tests -v
+```
 
-## Troubleshoot
+Start with `starter.py`; use `solution.py` for comparison. Inputs for interactive lessons are in `input.txt`. The captured reference output is in `RUN_RESULT.txt`. Test an ordinary case, a blank or missing case, and a boundary case. For lessons 01–02, complete the planning worksheet before using the small validator/pseudocode example.
 
-Normalization incorrectly described as email validation. Explain the expected result and use the checks before moving on.
+## Independent exercise
 
-## Continuity
+Use your own fictional character names and add one edge case. Record the input, expected result, actual result and correction.
 
-Prerequisite practice: 7. Next: Lesson 09. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
+## Continue
 
-## Run
+[Previous lesson](https://youtu.be/_e58ydegraE) · [Next lesson](https://youtu.be/C8cjcmzTpe0)
 
-From this lesson folder: `python solution.py`. Type the values in input.txt if it is not empty. Compare to expected.txt; input prompts may precede output. Use a scratch copy for file-writing lessons.
+If a video is not released yet, save the master Course and complete the exercise before returning.

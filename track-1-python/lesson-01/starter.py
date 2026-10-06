@@ -1,2 +1,8 @@
-"""Exercise: Create lesson01.py and print Rebootv2 Python setup works! Run it from the project folder."""
-raise NotImplementedError("Complete the exercise, then compare with solution.py")
+"""Lesson 01 learner starter. Implement the task in README.md."""
+
+def practice():
+    # TODO: implement the lesson task; compare with solution.py only after trying.
+    raise NotImplementedError("Complete the README exercise")
+
+if __name__ == "__main__":
+    practice()

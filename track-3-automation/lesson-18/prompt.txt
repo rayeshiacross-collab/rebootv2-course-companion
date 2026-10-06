@@ -1,0 +1,3 @@
+Task: Use a fixed rule for eligibility; use AI only to draft the explanation.
+Use only the supplied synthetic input and approved facts. Return fields: rule_result, review_required. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

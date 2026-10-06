@@ -1,17 +1,45 @@
 {
-  "lesson_slot": 27,
-  "working_focus": "File Document Automation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Validate file type and size, extract permitted content, treat embedded instructions as untrusted, then store approved output.",
-  "acceptance": "An allowed text file processes; oversized or disallowed file is rejected.",
-  "challenge": "Test extraction failure without losing original metadata.",
-  "review_risk": "Untrusted document text controlling tools",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 27,
+  "video_id": "mK9mZJQFnqs",
+  "title": "Blog Posts, Newsletters, Long-Form Content",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Approved article request",
+  "required_fields": [
+    "topic",
+    "supplied_sources",
+    "audience"
+  ],
+  "field_mapping": {
+    "topic": "validated_input.topic",
+    "supplied_sources": "validated_input.supplied_sources",
+    "audience": "validated_input.audience"
   },
-  "vendor_execution_status": "not tested"
+  "action": "long_form",
+  "output_fields": [
+    "outline",
+    "draft",
+    "claims_to_check"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Draft an outline and article tied to supplied sources; flag unsourced claims.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Never invent quotations or citations.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

@@ -1,27 +1,26 @@
-# Practice 13: Git Repository Foundations
+# Lesson 13/41: Plan a Coding Project You Can Actually Finish — Capstone Scope
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/0B0B3o-eo3M) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Initialize a repository, add .gitignore for .venv, __pycache__, .env and *.pyc, inspect the staged diff and commit.
+## Hands-on task
 
-## Verify
+Complete a capstone scope brief with acceptance criteria, exclusions and risks.
 
-git status is clean after commit; ignored secrets are absent from tracked files.
+## Companion
 
-## Challenge
+Complete [SCOPE_TEMPLATE.md](../SCOPE_TEMPLATE.md). The shared CSV-to-JSON capstone is a separate synthetic practice project supporting this topic.
 
-Explain one commit using git show.
+```text
+python track-2-capstone/src/app.py --input track-2-capstone/fixtures/leads.csv --output output/leads.json
+python -m unittest discover -s tests -v
+```
 
-## Troubleshoot
+Expected first run: accepted=2, rejected=1, duplicates=1. A repeated run refuses to overwrite; inspect the existing output before deliberately using `--overwrite`.
 
-Reported numbering conflict around 13 and 15. Explain the expected result and use the checks before moving on.
+## Continue
 
-## Continuity
+[Previous lesson](https://youtu.be/pyEGcV8AHI0) · [Next lesson](https://youtu.be/Xgz3Qlu_lAY)
 
-Prerequisite practice: 12. Next: Lesson 14. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Working project
-
-Use [the capstone](../README.md), its fixtures and the root test suite.
+If a video is not released yet, save the master Course and complete the exercise before returning.

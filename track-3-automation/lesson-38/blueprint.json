@@ -1,17 +1,49 @@
 {
-  "lesson_slot": 38,
-  "working_focus": "Logging and Observability",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Record run ID, timestamp, step, status, duration and a non-sensitive record reference.",
-  "acceptance": "Trace success and failure without passwords, tokens or unnecessary personal data.",
-  "challenge": "Correlate a retry with the original run.",
-  "review_risk": "Source sample lacks timestamp and step",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 38,
+  "video_id": "XnRWq8_ESmA",
+  "title": "Measuring Automation ROI",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Pilot review",
+  "required_fields": [
+    "baseline_minutes",
+    "pilot_minutes",
+    "review_minutes",
+    "runs",
+    "cost"
+  ],
+  "field_mapping": {
+    "baseline_minutes": "validated_input.baseline_minutes",
+    "pilot_minutes": "validated_input.pilot_minutes",
+    "review_minutes": "validated_input.review_minutes",
+    "runs": "validated_input.runs",
+    "cost": "validated_input.cost"
   },
-  "vendor_execution_status": "not tested"
+  "action": "roi",
+  "output_fields": [
+    "net_minutes",
+    "cost",
+    "assumptions"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Subtract pilot plus review time from baseline; report measured and estimated inputs separately.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not promise ten hours saved without measurements.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

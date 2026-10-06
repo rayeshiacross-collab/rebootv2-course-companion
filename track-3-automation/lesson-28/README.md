@@ -1,27 +1,35 @@
-# Practice 28: Lead CRM Automation
+# Lesson 28/41: Social Media Content At Scale
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/Imbo1i2HQ5A) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Normalize email, search for an existing record, then update or create using an idempotency or uniqueness mechanism.
+## Hands-on task
+
+Adapt one approved message to three platforms; check length and approval state.
+
+## Reference workflow
+
+Trigger: Approved master message.
+
+Adapt wording for each supplied platform limit and queue review.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Repeated input results in one record, including concurrent retries.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Do not silently post or create unsupported promises.
 
-## Challenge
+## Continue
 
-Preserve fields absent from the update request.
+[Previous lesson](https://youtu.be/mK9mZJQFnqs) · [Next lesson](https://youtu.be/a2DIyRyergo)
 
-## Troubleshoot
-
-Search then create alone is not concurrency safe. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 8. Next: Lesson 29. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

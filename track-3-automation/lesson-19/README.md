@@ -1,27 +1,35 @@
-# Practice 19: Prompt Engineering
+# Lesson 19/41: The Essential AI Tool Stack
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/-EbvGaaua0w) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Classify a supplied request into sales, support, billing or other using explicit allowed labels.
+## Hands-on task
+
+Compare tool inputs, outputs, cost limits and data policies using synthetic examples.
+
+## Reference workflow
+
+Trigger: Tool evaluation requested.
+
+Compare a local script, a spreadsheet and a workflow tool against the same task.
+
+Read `blueprint.json`, fill appropriately typed values in `test-data.json`, and use `prompt.txt` with `system-instructions.txt`. Produce a field-mapping table and record each test result. These are portable design files, not Make/Zapier/n8n imports.
+
+## Local controls demonstration
+
+```text
+python track-3-automation/simulator.py
+```
+
+Expected statuses include simulated_sent, duplicate_suppressed, approval_required and needs_review. This shared simulator demonstrates controls, not a working implementation of this lesson’s provider integration. No messages, events, posts or payments are sent.
 
 ## Verify
 
-Duplicate-charge text maps to billing; vague text routes to review by policy.
+Test valid input, missing required fields, ambiguous content, repeated events and service failure. Keep unvalidated output in review. Reject tools without an acceptable data policy.
 
-## Challenge
+## Continue
 
-Add three held-out messages and record actual outputs.
+[Previous lesson](https://youtu.be/hdTeJy2eUPs) · [Next lesson](https://youtu.be/STOYql6QL2A)
 
-## Troubleshoot
-
-Single example mistaken for reliable performance. Explain the expected result and use the checks before moving on.
-
-## Continuity
-
-Prerequisite practice: 18. Next: Lesson 20. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Reference implementation
-
-Read blueprint.json and [the simulator guide](../README.md). The simulator demonstrates selected cross-cutting controls, not a real implementation of every integration in this track.
+If a video is not released yet, save the master Course and complete the exercise before returning.

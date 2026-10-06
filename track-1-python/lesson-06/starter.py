@@ -1,2 +1,8 @@
-"""Exercise: Define calculate_total(price, quantity), return their product, and format calculate_total(19.99, 3) with two decimal places."""
-raise NotImplementedError("Complete the exercise, then compare with solution.py")
+"""Lesson 06 learner starter. Implement the task in README.md."""
+
+def practice():
+    # TODO: implement the lesson task; compare with solution.py only after trying.
+    raise NotImplementedError("Complete the README exercise")
+
+if __name__ == "__main__":
+    practice()

@@ -1,0 +1,3 @@
+Task: Recalculate amounts using decimal arithmetic; flag duplicates and stage review.
+Use only the supplied synthetic input and approved facts. Return fields: subtotal, tax, total, duplicate. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

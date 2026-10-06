@@ -1,0 +1,3 @@
+Task: Compare timezone-aware intervals and reject overlaps before staging an event.
+Use only the supplied synthetic input and approved facts. Return fields: conflict, proposed_slot, review_state. Unknown values must be null with a review reason. Do not execute external actions.
+Input data: paste the validated exercise input here.

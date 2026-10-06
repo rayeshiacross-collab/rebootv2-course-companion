@@ -1,17 +1,48 @@
 {
-  "lesson_slot": 23,
-  "working_focus": "Webhooks",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Receive a mock lead.created event, verify provider authentication where supported, validate fields and deduplicate event IDs.",
-  "acceptance": "Valid event is processed once; missing email is rejected; replay causes no duplicate.",
-  "challenge": "Test two deliveries of the same event.",
-  "review_risk": "Unauthenticated intake and repeated deliveries",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 23,
+  "video_id": "gsK5gHSyuWE",
+  "title": "Automating Email Responses And Follow-Ups",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Customer email received",
+  "required_fields": [
+    "message_id",
+    "email",
+    "message",
+    "approved_template"
+  ],
+  "field_mapping": {
+    "message_id": "validated_input.message_id",
+    "email": "validated_input.email",
+    "message": "validated_input.message",
+    "approved_template": "validated_input.approved_template"
   },
-  "vendor_execution_status": "not tested"
+  "action": "draft_email",
+  "output_fields": [
+    "recipient",
+    "subject",
+    "body",
+    "approved_digest"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Prepare a reply with the approved template; queue a follow-up only after approval.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "No real send without consent and owner review.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }

@@ -1,13 +1,12 @@
-def clean_email(email):
-    return email.strip().lower()
-
-leads = [" ALICE@example.com ", "BOB@example.com", " carol@Example.com ", " "]
-clean = [clean_email(value) for value in leads if value.strip()]
-assert clean_email(" TEST@EXAMPLE.COM ") == "test@example.com"
-assert len(clean) == 3
-with open("clean_leads.txt", "w", encoding="utf-8") as file:
-    file.write("\n".join(clean) + "\n")
-with open("clean_leads.txt", encoding="utf-8") as file:
-    assert file.read().splitlines() == clean
-print("\n".join(clean))
-print(f"Accepted: {len(clean)}")
+# Unit tests protect observable search behavior during refactoring.
+import unittest
+def find_name(query, names):
+    key = query.strip().casefold()
+    return next((n for n in names if key and n.casefold() == key), None)
+class SearchTests(unittest.TestCase):
+    def test_exact(self): self.assertEqual(find_name('Nova', ['Nova']), 'Nova')
+    def test_normalized(self): self.assertEqual(find_name(' NOVA ', ['Nova']), 'Nova')
+    def test_blank(self): self.assertIsNone(find_name(' ', ['Nova']))
+    def test_missing(self): self.assertIsNone(find_name('Orion', ['Nova']))
+if __name__ == '__main__':
+    unittest.main()

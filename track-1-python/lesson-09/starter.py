@@ -1,2 +1,8 @@
-"""Exercise: Write three task lines to tasks.txt using UTF-8, then reopen and read the file."""
-raise NotImplementedError("Complete the exercise, then compare with solution.py")
+"""Lesson 09 learner starter. Implement the task in README.md."""
+
+def practice():
+    # TODO: implement the lesson task; compare with solution.py only after trying.
+    raise NotImplementedError("Complete the README exercise")
+
+if __name__ == "__main__":
+    practice()

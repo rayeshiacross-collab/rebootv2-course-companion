@@ -1,27 +1,26 @@
-# Practice 14: Capstone Requirements and Architecture
+# Lesson 14/41: Git and GitHub for Beginners — Turn Your Project into Portfolio Evidence
 
-**Inventory match pending.** Preserve the original uploaded video. This topic is the planning map, not a verified title.
+[Watch the lesson](https://youtu.be/Xgz3Qlu_lAY) · [Master Course](https://www.youtube.com/playlist?list=PLLJzVRttUfqU)
 
-## Do
+Matched to the verified uploaded title and course position. This is a newly authored companion, not a transcript or a claim to reproduce unseen footage. Availability follows the YouTube release schedule.
 
-Write a README covering problem, user, inputs, processing, outputs, failures and definition of done. Create src, tests and docs.
+## Hands-on task
 
-## Verify
+Show git status, add, commit and log; push a synthetic project and review README.
 
-Explain input to validation to processing to output before implementation.
+## Companion
 
-## Challenge
+Complete [GIT_WORKFLOW.md](../GIT_WORKFLOW.md). The shared CSV-to-JSON capstone is a separate synthetic practice project supporting this topic.
 
-Add a concrete rejection case and expected message.
+```text
+python track-2-capstone/src/app.py --input track-2-capstone/fixtures/leads.csv --output output/leads.json
+python -m unittest discover -s tests -v
+```
 
-## Troubleshoot
+Expected first run: accepted=2, rejected=1, duplicates=1. A repeated run refuses to overwrite; inspect the existing output before deliberately using `--overwrite`.
 
-Source resource map assigns Git here instead. Explain the expected result and use the checks before moving on.
+## Continue
 
-## Continuity
+[Previous lesson](https://youtu.be/0B0B3o-eo3M) · [Next lesson](https://youtu.be/d6Cn-dw6i7c)
 
-Prerequisite practice: 13. Next: Lesson 15. Use [the map](../../COURSE_MAP.md) to navigate. Public video links remain pending inventory verification.
-
-## Working project
-
-Use [the capstone](../README.md), its fixtures and the root test suite.
+If a video is not released yet, save the master Course and complete the exercise before returning.

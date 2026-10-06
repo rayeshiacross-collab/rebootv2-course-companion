@@ -5,7 +5,7 @@
   },
   {
     "path": "CHANGELOG.md",
-    "sha256": "1828ac358d3df0c677aa96973bb7c8f76ddffe9e5d6efb267fb3703e73aec2f6"
+    "sha256": "73a766d5cf24ac3d74f5f169a39a901a519fca61a1eae76f84f04a61b76ae3e7"
   },
   {
     "path": "CONTRIBUTING.md",
@@ -13,7 +13,7 @@
   },
   {
     "path": "COURSE_MAP.md",
-    "sha256": "97aff169a556d257d135daf868f9cd4c4ffe20ba6c38ebbd70fb5d928f116663"
+    "sha256": "b39fdbbd8e1e47742b6c50629cef9acec38f77796a7785951b491eec81a8b773"
   },
   {
     "path": "docs/41_Video_Continuity_Matrix.csv",
@@ -21,23 +21,23 @@
   },
   {
     "path": "docs/41_Video_Remediation_Matrix.md",
-    "sha256": "2c62ef897e46807660465c88296a5aa2bac3a3109146be9112ce610fe6b3980a"
+    "sha256": "b5d7a7c2a21dad380a1d88beb1e83dae65811b1cb2b748afa509d7658dfe691b"
   },
   {
     "path": "docs/Audit_Findings.md",
-    "sha256": "e2f0a119d5a83ecda4bf086a06b2a94037717bc292667d691db20402c5d98206"
+    "sha256": "e3d6889464e5ce84e79c1220095202623642486649ed74b69e9124f1077ada49"
   },
   {
     "path": "docs/course-map.csv",
-    "sha256": "4b4a70b1cdf3310c00f54653707e6d33ddf9eddee1546c6d8ac3586a0c81c403"
+    "sha256": "e7e53986324c7a3cce3f426c859c0d69abb4cd4721e00158e7a6f9358c016c2a"
   },
   {
     "path": "docs/INVENTORY_STATUS.md",
-    "sha256": "adec659ee409c1e4a0210ec175c7f6c9f4a77d74bcee806225207a1e10b23bb4"
+    "sha256": "c7e3f128eabb76e59152ceae41f3e2f672f2bc0a93a123aed2a5c0988fb370cf"
   },
   {
     "path": "docs/PROJECT_SCOPE.md",
-    "sha256": "67ec02dbaf8e7d71b6d782395ee9869f6bc79a8f164d599ce3f570ce612be8e6"
+    "sha256": "458935b2801029f1be4004fe4d250fbf456e5fe7aee57bd2ff89082b1a352ecc"
   },
   {
     "path": "docs/PUBLISHING.md",
@@ -48,12 +48,20 @@
     "sha256": "94f6e71ae6c3312e15cedc91921e37808a688c8d9b160bfab5bfeeb1d8753d55"
   },
   {
+    "path": "IMPLEMENTATION_STATUS.md",
+    "sha256": "b4dd4e39ce56586ecbaf68b7138bf183abff4659facc7cc672e1650c18a876a7"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "fd87c066aac8360ecfe69389c3621e3bcce31670fbde1b35549507bae38e698c"
+  },
+  {
     "path": "README.md",
-    "sha256": "e61880d82bee132d8c21f4e8956fe054125b45a9e01bcd498c418fc1674e82e5"
+    "sha256": "d03c976798a45288b35f909ad944f3ec80babe336d5d7e321f14eca2b5132d31"
   },
   {
     "path": "RIGHTS.md",
-    "sha256": "e2526b3e5cad0eed7dfa5712bfd22e5eb09329e4a5ed5de1e8d7a65b428e0b6d"
+    "sha256": "955cbde441b26de513a3914b733e8637818e1c5876e5f0de36e19d2e8d12312e"
   },
   {
     "path": "SECURITY.md",
@@ -61,11 +69,11 @@
   },
   {
     "path": "tests/test_companion.py",
-    "sha256": "c18a8d154284e8c33c7cd099a3d656e1b8220b1e151e5b8685b6053cc8f6239e"
+    "sha256": "771ddbf6d77056985ef02fab366723c2a2e2a4432ebb7e695be0ad354f5f1137"
   },
   {
     "path": "track-1-python/lesson-01/expected.txt",
-    "sha256": "feab7bdd550d4791d4e3dca29c4405610d0a5e49b38b36e351ebfbd65ade2ea1"
+    "sha256": "9f6e2f530fe32892850e51e542c241346874eb886030e4546a600c2b1dafa9b5"
   },
   {
     "path": "track-1-python/lesson-01/input.txt",
@@ -73,19 +81,23 @@
   },
   {
     "path": "track-1-python/lesson-01/README.md",
-    "sha256": "272202b41fcd39b7aa71ad523204d051b4e9e49ec9414b7902986a70b8380b54"
+    "sha256": "b2521decd10f1ff38c68e1f6b109bc8d2f1220d1b509d8fe7f12d54d26706b35"
+  },
+  {
+    "path": "track-1-python/lesson-01/RUN_RESULT.txt",
+    "sha256": "9f6e2f530fe32892850e51e542c241346874eb886030e4546a600c2b1dafa9b5"
   },
   {
     "path": "track-1-python/lesson-01/solution.py",
-    "sha256": "21a7b1b3ec84390ad1cf58dd5c3ef5d80ef4bf5d06e53a41c170adeb53d51a80"
+    "sha256": "2c6faf3bfa568495161353f22b584d4c6f296986a9c9d2820e3a17d1e8dc2e4f"
   },
   {
     "path": "track-1-python/lesson-01/starter.py",
-    "sha256": "1727d3b36f748810c909afae675ed97df450f731d736d42dad91d16e1a6f8708"
+    "sha256": "893bf01686cceefd78bed59741dd2eff022496b825f8de5b068f3caa2dcac702"
   },
   {
     "path": "track-1-python/lesson-02/expected.txt",
-    "sha256": "af9683012338f849261a6ffa006a423ad25bd5e9351c2079fef0087fe6199f6b"
+    "sha256": "6db99175107bb4b0067e9a421ac714151b8909296bcb9e601c3711d8c0849a21"
   },
   {
     "path": "track-1-python/lesson-02/input.txt",
@@ -93,59 +105,71 @@
   },
   {
     "path": "track-1-python/lesson-02/README.md",
-    "sha256": "4bd0dfd206015f35700a5935050a6c3f1ea587b50cec720958f24156b270a0c2"
+    "sha256": "7f65afa3b8d6c4e5f73cd84daa5608eabc2bedebaf97364b8d97534002985f10"
+  },
+  {
+    "path": "track-1-python/lesson-02/RUN_RESULT.txt",
+    "sha256": "6db99175107bb4b0067e9a421ac714151b8909296bcb9e601c3711d8c0849a21"
   },
   {
     "path": "track-1-python/lesson-02/solution.py",
-    "sha256": "ca9f105f44df8cad80f5995dc8c46542c5c221b21cfeadb24efe61aa876760bc"
+    "sha256": "9c1b3044e6b1c3a15229b7d364caeb3563ea829a4c09859d1305f5a3fcff902d"
   },
   {
     "path": "track-1-python/lesson-02/starter.py",
-    "sha256": "2589ef5827bb467abbc07a602079c36f4c35b9457121dab9b2681b8ba085f99d"
+    "sha256": "5623e1a8d4a4daec64382f45782142712b67e3b5d4782de98f61d8d7f0541b77"
   },
   {
     "path": "track-1-python/lesson-03/expected.txt",
-    "sha256": "6d4d487c630b7dfe9702e8ea3b68bd7f48df1e20c109d7661af669e469f1ebcb"
+    "sha256": "c25a9e4eddfa701dc8961d426c09427d8471a07cf7692751051540c0d329892b"
   },
   {
     "path": "track-1-python/lesson-03/input.txt",
-    "sha256": "497c7b3811224ed794154e9d709ebb7a765ad8ea39f5739b1cf7f6b8c11cfb99"
+    "sha256": "c37fd4948c4442da9eee16eff57f2773710a8f799620c4219bed984fe0c8d8cb"
   },
   {
     "path": "track-1-python/lesson-03/README.md",
-    "sha256": "41fe40f849a1847cae7fe62ba1e3865b073fa1543f9d9707b4c524bdbfc4a855"
+    "sha256": "34546a0e48a84f8fc15c5752933782bbbb50fc8df4f444408bbbba5c4ca6a853"
+  },
+  {
+    "path": "track-1-python/lesson-03/RUN_RESULT.txt",
+    "sha256": "c25a9e4eddfa701dc8961d426c09427d8471a07cf7692751051540c0d329892b"
   },
   {
     "path": "track-1-python/lesson-03/solution.py",
-    "sha256": "3fdd0b482ff53e60b84700d5d278820a010b449471751df517d361a5a58beb5c"
+    "sha256": "aae7e7f37db42122e57c400871a9ad2f93c1ef82dc1e246dca25e8213f5daad0"
   },
   {
     "path": "track-1-python/lesson-03/starter.py",
-    "sha256": "18a0c12ce300bf5e6d8e0409ad20ecfc0273f199446779402f3d889ac384246e"
+    "sha256": "4def3941b98fc35d67f85223c364ff2be228b69a2fc0651300868ffec0e2d62d"
   },
   {
     "path": "track-1-python/lesson-04/expected.txt",
-    "sha256": "42532186854291f477776454283b083f32e44fefbe753df5aa5b3bd912e41be9"
+    "sha256": "66a40b9a96c0688181c50f0b242c62daa3cb4b8fa69f1e3f02dd32399404c2c4"
   },
   {
     "path": "track-1-python/lesson-04/input.txt",
-    "sha256": "8977f3f496d3d76e04e55afbff02fcbe71968324ca08678036e85e9b44c16cbb"
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
   },
   {
     "path": "track-1-python/lesson-04/README.md",
-    "sha256": "ec7e556e94e0602dc627a77c3f6e3a513a81568c747f59ee4ada50dfbe5f4b19"
+    "sha256": "14e9215eaa76f653fcd53be082c094b3c440be920dd2291bb4e7a44edec874ef"
+  },
+  {
+    "path": "track-1-python/lesson-04/RUN_RESULT.txt",
+    "sha256": "66a40b9a96c0688181c50f0b242c62daa3cb4b8fa69f1e3f02dd32399404c2c4"
   },
   {
     "path": "track-1-python/lesson-04/solution.py",
-    "sha256": "84d43de60b994907023c734ac6608e50aca052482cab81914745bf09ba989431"
+    "sha256": "9b5c98de45b4dcd2f90541a42534eb5b71d36cf3e75ba459a6c1c58d5fd95b8e"
   },
   {
     "path": "track-1-python/lesson-04/starter.py",
-    "sha256": "c03f1b01244e2cb24b1e61297d3036f5704620b2df8c57dbe7e29e1e1150d4e9"
+    "sha256": "508f0172d109a9e780b8999f925f69e95115f730a7e0366d5b06a93c68369dd0"
   },
   {
     "path": "track-1-python/lesson-05/expected.txt",
-    "sha256": "72dcd8d014ae6e7b62bbb4adae525ca3bd56e20383209952d51f76469ac00bc9"
+    "sha256": "f6b287a7579f0c5b1038ee801d09dc704a73936d2e8debd6cc097fe786037dbd"
   },
   {
     "path": "track-1-python/lesson-05/input.txt",
@@ -153,39 +177,47 @@
   },
   {
     "path": "track-1-python/lesson-05/README.md",
-    "sha256": "7a79592f4dee3a039907190f8f56184b81df42b3982cefc02c3284ea17b85844"
+    "sha256": "9da48a92e5cd13ae416b0d374d734c7fc2e48517590b35d744ff6cb891f3ae94"
+  },
+  {
+    "path": "track-1-python/lesson-05/RUN_RESULT.txt",
+    "sha256": "f6b287a7579f0c5b1038ee801d09dc704a73936d2e8debd6cc097fe786037dbd"
   },
   {
     "path": "track-1-python/lesson-05/solution.py",
-    "sha256": "ef2d84fd20a2960e3c34de1ce97f4c66fdbb935b2a260453e76f1f7f770b6bb7"
+    "sha256": "bbd743052b225ccac36b08e2b56de8085f068b4fdbd78b2b311a51ab0247ac52"
   },
   {
     "path": "track-1-python/lesson-05/starter.py",
-    "sha256": "6c70bfec683f7529281d01e0a42be51bca6872d0322e38b791c3d34add85dcb2"
+    "sha256": "1fce2f93d73bd1dbd96495d2778535ea5b9716e0d39185913c2bd9b773929589"
   },
   {
     "path": "track-1-python/lesson-06/expected.txt",
-    "sha256": "d62957d3d6261490e58b627dde9ace8b031a00098e3601fdfb91485f74c97f72"
+    "sha256": "d61d096bb09df030e1b947cc734bd25621b589061516b2c093978386e1f45ba9"
   },
   {
     "path": "track-1-python/lesson-06/input.txt",
-    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    "sha256": "df475d177334e10a80eb7689a2d3b9cb89a510600569c545c6baadd1bdeb2531"
   },
   {
     "path": "track-1-python/lesson-06/README.md",
-    "sha256": "13e237058c91607d2de1dfdcb237f106dd58c733a1d56911f4d5192cbd36ecbc"
+    "sha256": "ae06f51b55edd41a9276188cf99921ea969444e505545ae1cab5ff3ebd510835"
+  },
+  {
+    "path": "track-1-python/lesson-06/RUN_RESULT.txt",
+    "sha256": "d61d096bb09df030e1b947cc734bd25621b589061516b2c093978386e1f45ba9"
   },
   {
     "path": "track-1-python/lesson-06/solution.py",
-    "sha256": "c53ad59d0500d4a0b5d2c1fa7c3a3bc99a6e029457ce40ff83a8efe7171568db"
+    "sha256": "e590c02d6b848387fed7411489243cc6063bbcea96e6baafe7b32eb1b5646f1f"
   },
   {
     "path": "track-1-python/lesson-06/starter.py",
-    "sha256": "a08f590049351398c523ef004e0fda4996f6a8d82986f1001300e0d1c3d2fa06"
+    "sha256": "4fa0282aa8f250350cb5376ec8cd48f76bfc8e3503a46a162e6b0a16f2ce195b"
   },
   {
     "path": "track-1-python/lesson-07/expected.txt",
-    "sha256": "7fc06851bc9ce6a24facf717e4d34cff521eb7eb8d649c99f022a487052eb59e"
+    "sha256": "34335d65e6d049e98e45cb445f78066ea8bd912df3693c928f30c5c577c344bf"
   },
   {
     "path": "track-1-python/lesson-07/input.txt",
@@ -193,19 +225,23 @@
   },
   {
     "path": "track-1-python/lesson-07/README.md",
-    "sha256": "2fa160be2bc09585620d900fc7f60e9e0c02293339bedd3714457abfa382f995"
+    "sha256": "775336a9cc47946cfc67219acfa22190deb87a4fd1be513be386b038f5fe0dbc"
+  },
+  {
+    "path": "track-1-python/lesson-07/RUN_RESULT.txt",
+    "sha256": "34335d65e6d049e98e45cb445f78066ea8bd912df3693c928f30c5c577c344bf"
   },
   {
     "path": "track-1-python/lesson-07/solution.py",
-    "sha256": "fa9a3b828590c1919562431ce21c8e64584954956477e4ef7c7087c068914b7d"
+    "sha256": "b1e792c21b0e6f277b87d02b47f51fcf29a08d8f7320ce21d05d1878a0479e49"
   },
   {
     "path": "track-1-python/lesson-07/starter.py",
-    "sha256": "b2205a2668ad616287b3d84561055753b7d9f22d1882b782dff622e5181fcb7e"
+    "sha256": "cabd24dd99ff3dcac3b8e588b90d7ad19647544a9fdaa1d9b84781e76ec9324a"
   },
   {
     "path": "track-1-python/lesson-08/expected.txt",
-    "sha256": "8c10646a3ed5a59fb4aef9f4e7f104350578dab555c61baa065cc751fd178c71"
+    "sha256": "ca4a016eae14ab0c7ebb935a6e24ae8b512958f25c788f11eb99566d066b7957"
   },
   {
     "path": "track-1-python/lesson-08/input.txt",
@@ -213,19 +249,23 @@
   },
   {
     "path": "track-1-python/lesson-08/README.md",
-    "sha256": "d1c1efd73991f9371169e95b895206cf85fb5ea6e867d8a0853a2c40735c298b"
+    "sha256": "2fbf2826261654e34759c957fc90df5e8fc0e4b5ecbf885213585af727953224"
+  },
+  {
+    "path": "track-1-python/lesson-08/RUN_RESULT.txt",
+    "sha256": "ca4a016eae14ab0c7ebb935a6e24ae8b512958f25c788f11eb99566d066b7957"
   },
   {
     "path": "track-1-python/lesson-08/solution.py",
-    "sha256": "e3979736405b600f47a862fbdf417538abae65d36efaf29492d37b574108c015"
+    "sha256": "bbd76c14f031e8eb41d2918ad8d2ab7d2984b69706e88abb0c8eb2f8194a632e"
   },
   {
     "path": "track-1-python/lesson-08/starter.py",
-    "sha256": "73e4d09b3b06cee0fd210b040c571bb936b33355de252165b0a1752b76d3ee0c"
+    "sha256": "b98abd79611c7c2d4c8dce3daf4a912cf565e10a9cbb7da3020aff8bfb6c554a"
   },
   {
     "path": "track-1-python/lesson-09/expected.txt",
-    "sha256": "2cb8c391d1d260617080892a7409b2fed02e6df77e344762539ed67989faf2eb"
+    "sha256": "8b55efa45a53517ae3e21e369ef6c4af4adac8feb4987ef2546494d33cbf1209"
   },
   {
     "path": "track-1-python/lesson-09/input.txt",
@@ -233,39 +273,47 @@
   },
   {
     "path": "track-1-python/lesson-09/README.md",
-    "sha256": "cb3b28b64505124b08209eee5ae6a0061b1b56456a56d318f2a3ab58dbc5e043"
+    "sha256": "cfec22af43b830ec12c0930b580527f1af3f96ed9795c9ff3af13d43c466d15c"
+  },
+  {
+    "path": "track-1-python/lesson-09/RUN_RESULT.txt",
+    "sha256": "8b55efa45a53517ae3e21e369ef6c4af4adac8feb4987ef2546494d33cbf1209"
   },
   {
     "path": "track-1-python/lesson-09/solution.py",
-    "sha256": "45385e81967fb8ae8e4711f569233e9cd0a3ba4aa257372803773cfe675829b9"
+    "sha256": "430fb90a246fef08cefa543f02c2740da3a7fcc0045c033f0735652add46552b"
   },
   {
     "path": "track-1-python/lesson-09/starter.py",
-    "sha256": "6680c016b990046eb546c516f26c84d152d06650817fe6c97c7dad358b58d3e3"
+    "sha256": "aa928dff4954da73357fd03a79cce86006d63f4a94326ac9c00ee85e82b44489"
   },
   {
     "path": "track-1-python/lesson-10/expected.txt",
-    "sha256": "cbdc8778c78f3c742c43571329c74630580c43f03b99bea51a50af820e600b2f"
+    "sha256": "23a35e9a4dfa29eeec5c9ec259e94c561462014ca2823612bbf68f3697c577dc"
   },
   {
     "path": "track-1-python/lesson-10/input.txt",
-    "sha256": "7fb2aaeaf3eef66b52db104118c30f62899f5f0df520350a94a8fcb843c0dfdf"
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
   },
   {
     "path": "track-1-python/lesson-10/README.md",
-    "sha256": "19672b26960b7b8cbb289d55e6c43a45d2e470fe19076bdaef55a620006c88aa"
+    "sha256": "5ebb86ad37ddfad1c5bc05a1550316de4606bfe06d583755e1e2ee546dcaaf99"
+  },
+  {
+    "path": "track-1-python/lesson-10/RUN_RESULT.txt",
+    "sha256": "23a35e9a4dfa29eeec5c9ec259e94c561462014ca2823612bbf68f3697c577dc"
   },
   {
     "path": "track-1-python/lesson-10/solution.py",
-    "sha256": "1b534c85ba65417feea444ad2aa31754aa90182e1a9a1eaa0f0ca95af8ccb05b"
+    "sha256": "d12ee6e8812cfd2a22eac5d452b256f7fc1acf3d8a650c3cfc28e9a962333e7b"
   },
   {
     "path": "track-1-python/lesson-10/starter.py",
-    "sha256": "1d1514661bf15fd1f15e44c8a57604cec5547c3e668c73a04b14e432f42d5d4e"
+    "sha256": "2681677ed73c1b8b62a32a9267d66765a28c06193a6c77821b9929f10af494a8"
   },
   {
     "path": "track-1-python/lesson-11/expected.txt",
-    "sha256": "afe652fd82e45d6ac25d7157b29e9f095e3448b2ab8d61221c3d2be78f2dfd91"
+    "sha256": "e7ecaf4507d1a4a0a28ba3b8c46cbfd664c71543693005e6d4e47cfc21f9de4f"
   },
   {
     "path": "track-1-python/lesson-11/helpers.py",
@@ -273,23 +321,27 @@
   },
   {
     "path": "track-1-python/lesson-11/input.txt",
-    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    "sha256": "e7b897bfe74b392c89a10422fe94bc275d6c6a768a51981f659cf6b5df23a06e"
   },
   {
     "path": "track-1-python/lesson-11/README.md",
-    "sha256": "398517a9e46e0bf96c30068f0d960ecfafbc9a16925f22df0891c6244824a97f"
+    "sha256": "6c14698dc105c47d86f72e58d1e44c02495e82e4d39a42e2fc739ce77a5200d7"
+  },
+  {
+    "path": "track-1-python/lesson-11/RUN_RESULT.txt",
+    "sha256": "e7ecaf4507d1a4a0a28ba3b8c46cbfd664c71543693005e6d4e47cfc21f9de4f"
   },
   {
     "path": "track-1-python/lesson-11/solution.py",
-    "sha256": "d522360cac69b286484995b87d5b3364c5ceb798966a95d12e39b68963bfa99a"
+    "sha256": "9671b5d3cf4d0967552affe6fade15da8aafa67057a42ac2c5e5bc62761ef017"
   },
   {
     "path": "track-1-python/lesson-11/starter.py",
-    "sha256": "6a3411a06baf13fadfd25dfbafa4d84cd0bf3fc317b0bd5d7e7314094e2d0fdb"
+    "sha256": "a54ee822d338d6d2e594fbbca32b2e1c23d8fd3ac942a9fd64894cfbf5c8c5c9"
   },
   {
     "path": "track-1-python/lesson-12/expected.txt",
-    "sha256": "f1bfed134013e1bff3f17205c023aca327d0b80876664f3bc618236b1a100315"
+    "sha256": "6363cc0457c9224a0d70e2a163d36903649c638d54f7058d5845e26a1a773c72"
   },
   {
     "path": "track-1-python/lesson-12/input.txt",
@@ -297,47 +349,71 @@
   },
   {
     "path": "track-1-python/lesson-12/README.md",
-    "sha256": "87383e37eb5c5f0d6cd77be41fe491d52ff5a606b26df8b1cfbe3b4f65658b5a"
+    "sha256": "b757f79d745d76a7d5e65cc53d6ffb0528f6d262c89982e429deb83c6993af51"
+  },
+  {
+    "path": "track-1-python/lesson-12/RUN_RESULT.txt",
+    "sha256": "6363cc0457c9224a0d70e2a163d36903649c638d54f7058d5845e26a1a773c72"
   },
   {
     "path": "track-1-python/lesson-12/solution.py",
-    "sha256": "8354593cc3266ed6c3d194d648949927e2197aa0d380d499d0df00db4108c439"
+    "sha256": "57891da4fcba8e38397ee5c2c4362432c1f076dc75a857fcb2e8b90b832adb6f"
   },
   {
     "path": "track-1-python/lesson-12/starter.py",
-    "sha256": "533621bcccff591362bbb6c2956f9404e42e6573c659488da3c7dfea3c6afe5e"
+    "sha256": "8111fb9b546a674f150e1d6194daceff580cd7045b86f9268f11f747aa7e112d"
   },
   {
     "path": "track-1-python/README.md",
-    "sha256": "5016733dee2b674f4329d0217c8fee5bd429e732a74fe0583485ad320812320f"
+    "sha256": "dc373ae23edff2b705b62570998780192fdeae907edd73d2e884ce4ab9a00619"
+  },
+  {
+    "path": "track-2-capstone/DEMO_AND_REVIEW.md",
+    "sha256": "58b2b29b5991927580aa8fbee9afffd062b3e500a1a04cf7b472df758bc95ff6"
   },
   {
     "path": "track-2-capstone/fixtures/leads.csv",
     "sha256": "409b5007978a86f08a6ce3107594c58faf5ef857a7d0ff599b5a81d2deca0e7e"
   },
   {
+    "path": "track-2-capstone/GIT_WORKFLOW.md",
+    "sha256": "177aaed37be1b7dc8be544b004bec072e7b909f14f6f3208096d915c86b31ba3"
+  },
+  {
     "path": "track-2-capstone/lesson-13/README.md",
-    "sha256": "672fb1a8b64fc71906ae2a318a90b8f6f802dd09078977e5d59a6898c9965813"
+    "sha256": "4e0412ec054d89f7914aa11acf1509ff07c5e5948099e3b4e58ae38fd46242ea"
   },
   {
     "path": "track-2-capstone/lesson-14/README.md",
-    "sha256": "819cf37411764b7d7e13bb4ba8c6ac2d67e2deb9d009fe915aa648da5b4bc1d4"
+    "sha256": "544ea93e466d2cad5edaa700673c20c2b0ab5007f49b4daacf40587aafc4d69c"
   },
   {
     "path": "track-2-capstone/lesson-15/README.md",
-    "sha256": "e9b7e790362b0ccce6af6ca5204bada32981f6ee681a1f06a7680babf0ff8f45"
+    "sha256": "9d020407e7caee66f3a7d93f2535d5cf7bb6779da98daa1528e4f2e67e9a3af6"
   },
   {
     "path": "track-2-capstone/lesson-16/README.md",
-    "sha256": "b7427437a2dfcd73fd9e83779c112ad8739550c7e7cecb22f1feeb9498793352"
+    "sha256": "bfcca440da50e2f7b1669b4b1ee5f6d636c325087a6be6a9d4ccf24b2d96794b"
   },
   {
     "path": "track-2-capstone/lesson-17/README.md",
-    "sha256": "3bbc752c2205384230f5e6b768dd809a379d7ee852a0ead4ad50758332fd6179"
+    "sha256": "d5fce508965c213ce765b8f8c75b98ea6947015d559c0a5a035827e054c6f441"
+  },
+  {
+    "path": "track-2-capstone/QA_CHECKLIST.md",
+    "sha256": "8bb703929ca256515a022a8d87f43c21ac9ae5b5682b2887b1a078428d4d6e4c"
   },
   {
     "path": "track-2-capstone/README.md",
-    "sha256": "375ce0f63d78589c24f8e65beffe394f9f7f27a42410285944cfb5cecae987e3"
+    "sha256": "02a1df9b135a2622410b493bbf22332a3191589182e63a59bef045399987c1dc"
+  },
+  {
+    "path": "track-2-capstone/README_TEMPLATE.md",
+    "sha256": "60bfecda81b12b52d8866423543556a8ff93af29b4385729eb46a8edfb69a516"
+  },
+  {
+    "path": "track-2-capstone/SCOPE_TEMPLATE.md",
+    "sha256": "458935b2801029f1be4004fe4d250fbf456e5fe7aee57bd2ff89082b1a352ecc"
   },
   {
     "path": "track-2-capstone/src/app.py",
@@ -345,199 +421,487 @@
   },
   {
     "path": "track-3-automation/lesson-18/blueprint.json",
-    "sha256": "b3e6af126fd0faa1f07ad4f90145573cbe7b49f09e719e1a95a979632ffe791d"
+    "sha256": "f47bcf87d140c2f06102a13e0b6373d0d417eb7103ef907f287fb5c68fb36bfa"
+  },
+  {
+    "path": "track-3-automation/lesson-18/prompt.txt",
+    "sha256": "e014d1e653ebe16e28e71ded4aa46e1fad7a9d0496c24420369c9d5e7deb6177"
   },
   {
     "path": "track-3-automation/lesson-18/README.md",
-    "sha256": "751377fc597906cfc91c54afc674795cfbba43951c7320af0b1a29bcf80d9ad4"
+    "sha256": "21963a8ef9a2fde1f57e64b8f17f702648fc2fef2eb2893ba6aeba54265c2bc9"
+  },
+  {
+    "path": "track-3-automation/lesson-18/system-instructions.txt",
+    "sha256": "68250e327383c9b398ab79b99c0532b7953648a4a4556d22adf11be32892f14f"
+  },
+  {
+    "path": "track-3-automation/lesson-18/test-data.json",
+    "sha256": "245ec0c74a6265c8afdc2edd5860c36fc50cc3f20249abfa53f502052afcd3fa"
   },
   {
     "path": "track-3-automation/lesson-19/blueprint.json",
-    "sha256": "242705367a14f23b9b355a001879aafe8016b156a59e38641beb41fe42c6e4ad"
+    "sha256": "e818c9ff63b7884528c323caeffd66d5edf94e141baaf0b7d7bacfc4d65eb0e7"
+  },
+  {
+    "path": "track-3-automation/lesson-19/prompt.txt",
+    "sha256": "4e8f0ae8519dd69035c3544b5d74cfb7decb4f016ccb12737566cd854d51c110"
   },
   {
     "path": "track-3-automation/lesson-19/README.md",
-    "sha256": "b673d85617072983763b9ded9bff8d6da98944721da4beb1fa4b7df2e2b327b2"
+    "sha256": "816eba9d4a367fb2edd6c7881a90cb9a33f58e16c1e7b58e01bb6e6b964bba59"
+  },
+  {
+    "path": "track-3-automation/lesson-19/system-instructions.txt",
+    "sha256": "c4e2e92ca3604472d84e53103c08ad29e54cc2e051d4431963087cf5c0c02c37"
+  },
+  {
+    "path": "track-3-automation/lesson-19/test-data.json",
+    "sha256": "c807db8cba29b54101a275a90755920cc0a9e3cab9f175968532a1d8d808f569"
   },
   {
     "path": "track-3-automation/lesson-20/blueprint.json",
-    "sha256": "779e4c6bf7b72d1b68b3e2b08872e07617327a55b831bcaff2925ebfc21e1e80"
+    "sha256": "e8d41215be4b708007d4d5dc58e831f0d4031f63bac530b0372aae4a6399ffd2"
+  },
+  {
+    "path": "track-3-automation/lesson-20/prompt.txt",
+    "sha256": "83fc2bd9d14019ff24cb1916f24e19be61a6dc679444554a9cf71c1011271bf6"
   },
   {
     "path": "track-3-automation/lesson-20/README.md",
-    "sha256": "132bc91965c8593e07226aec102ba05c339c43ff7d946a2be69c75490cef7061"
+    "sha256": "8eb209bfb642d75e39143cdeca1120ba7e8192b87ed6425a31b1b804dde47309"
+  },
+  {
+    "path": "track-3-automation/lesson-20/system-instructions.txt",
+    "sha256": "1c0e9c86783571d933d35f6008367b36b4547d7b61879b92f1bb9cdd45e1f4ab"
+  },
+  {
+    "path": "track-3-automation/lesson-20/test-data.json",
+    "sha256": "be1a93e19b233990a5e27884cabf1db64e3f10e6e3fb8b4fa226b46fd8316e06"
   },
   {
     "path": "track-3-automation/lesson-21/blueprint.json",
-    "sha256": "eb727d050463f39e1e9b5a15396459dd241fa8826cfe81a43a6f47a6dc49c522"
+    "sha256": "18bf85b442d956d0d38aa03e0454fd3832caaf91b3badc062680fcba2dd89620"
+  },
+  {
+    "path": "track-3-automation/lesson-21/prompt.txt",
+    "sha256": "a2782867ff4c4d6a98501bbc9dcbb43a61b17edaaf6be26b1a795dfcf4c990c7"
   },
   {
     "path": "track-3-automation/lesson-21/README.md",
-    "sha256": "f4d3901e2f17720f1662d78a4a1151c406b3e27fe63ee95a7df0ee3acb920583"
+    "sha256": "7c8dc1abdf54097df181b4ef6de1ebe431488a7b51bae0bce48334291a42865f"
+  },
+  {
+    "path": "track-3-automation/lesson-21/system-instructions.txt",
+    "sha256": "790149afafd3227780fecdeb4f1065577f4d4ae09f470528912856dd72674d1d"
+  },
+  {
+    "path": "track-3-automation/lesson-21/test-data.json",
+    "sha256": "2583b6fdb6f382cf37a4f7009cf6a22df293d6d011d75653a0b83cf1f72f9a77"
   },
   {
     "path": "track-3-automation/lesson-22/blueprint.json",
-    "sha256": "87bac93548ca83972f13708f917c530731a20b997e4230c5a0ff255265b1fe89"
+    "sha256": "40cc82c9106eaffab5d7d21b71e2413a4d7ef9629f53ff18fa8a5d555e3a40f7"
+  },
+  {
+    "path": "track-3-automation/lesson-22/prompt.txt",
+    "sha256": "efd0ae818ac295b5c95df9d19bd13efd9a1d89239c14da63e97e9f467035c8ca"
   },
   {
     "path": "track-3-automation/lesson-22/README.md",
-    "sha256": "896f6ff2c3a566f6b25159c8f8894ff5faa295cad244a07ed6385735a20eb184"
+    "sha256": "9c4325109b325a7125e69798544ee663b716e9c1f700b6b3292435079d2308db"
+  },
+  {
+    "path": "track-3-automation/lesson-22/system-instructions.txt",
+    "sha256": "b01dff5e2d2ed1d718e50d4676a80784176145afa7ba76279774e60f464aa505"
+  },
+  {
+    "path": "track-3-automation/lesson-22/test-data.json",
+    "sha256": "802681266ee4790779c759f3c56bc3f69bca71696bdd47aa2917eba6da47fc72"
   },
   {
     "path": "track-3-automation/lesson-23/blueprint.json",
-    "sha256": "f0b3c080b58cf07b0bea3e9df3c8834b6b06a002f8eb72e984030d6de47993c5"
+    "sha256": "aa941dbcffd108ab2ecfd480f1abc20a4a0d6a0d89b128369099c48f23a5d404"
+  },
+  {
+    "path": "track-3-automation/lesson-23/prompt.txt",
+    "sha256": "43fa55849ab2c178b2d24c82ac07039ce43c37430244e46f3e120c6d4f587444"
   },
   {
     "path": "track-3-automation/lesson-23/README.md",
-    "sha256": "f844802ff11b2aa510a428bf9479e6a23f963afed2807232aebe7127346e08c1"
+    "sha256": "b9071e319099b910a0c619fa47264a893c956e0511441959fecdce9a0d5c503b"
+  },
+  {
+    "path": "track-3-automation/lesson-23/system-instructions.txt",
+    "sha256": "294c6f9d4406f76f7e92c50146e05260ec5b1218e8a63ecc42a587f5a6233153"
+  },
+  {
+    "path": "track-3-automation/lesson-23/test-data.json",
+    "sha256": "4b19f9173be94537c60a963d8374fe4f0290b3ce9ee9e7ab72387733185bc959"
   },
   {
     "path": "track-3-automation/lesson-24/blueprint.json",
-    "sha256": "f1f3a6a45432f637005b5793bf5df035881a00c82d385e5dd5e1b9d3e6f18e39"
+    "sha256": "7381a23fa49782e167be23f97ff6130969758d5b8eda2f134ea09cdc19a058a1"
+  },
+  {
+    "path": "track-3-automation/lesson-24/prompt.txt",
+    "sha256": "c67149a9a7d6f0ac0472ff6fefff89d66c9c4810f068914f568af68ca52b664e"
   },
   {
     "path": "track-3-automation/lesson-24/README.md",
-    "sha256": "ef3c093428daf0c534c47ffd823a1c9b09e8ce3c051413b6a5572a5667ff8df5"
+    "sha256": "abc2d1559a594be2409d2231f56c499c2d2e0c8ccbdeb9435b104e8cfad875d7"
+  },
+  {
+    "path": "track-3-automation/lesson-24/system-instructions.txt",
+    "sha256": "e673b419c4ae3e555919e8a36f34be1db57942e0a6570224ff81e20d4a73f4b1"
+  },
+  {
+    "path": "track-3-automation/lesson-24/test-data.json",
+    "sha256": "4899bee3bb6fe1bc705ef8bb520f6c0328ed3a7a02047f01c16b461ff1bcaa52"
   },
   {
     "path": "track-3-automation/lesson-25/blueprint.json",
-    "sha256": "f3d6ee1517d154a21432b8a5d45280b20deb1acec3cf1d25c7c8133690998648"
+    "sha256": "b668221ae78f01688e6aaea2a806d7309599a99db44734497d9a11afcf540372"
+  },
+  {
+    "path": "track-3-automation/lesson-25/prompt.txt",
+    "sha256": "1c34a0f873662b49169c505f1bdabe199994363dc59c5d3e1b868c53dd3a774a"
   },
   {
     "path": "track-3-automation/lesson-25/README.md",
-    "sha256": "8765b0308d9f899e2b00fac354eb64b9cce9bb1f8684783ce389148b69a77aa9"
+    "sha256": "5a77f4cfa1b4a07266a794a647cb570d473801ed204bbb15623da58b1c60150b"
+  },
+  {
+    "path": "track-3-automation/lesson-25/system-instructions.txt",
+    "sha256": "1f687fdfa8496fa4768d1d938f765ccf9fcabdc108e0fab04bd981f54f20bc8b"
+  },
+  {
+    "path": "track-3-automation/lesson-25/test-data.json",
+    "sha256": "610fdb6e8ad4184bdd0938a0179a21b6dae2d82f2d95a0bd51986d6717f88bb9"
   },
   {
     "path": "track-3-automation/lesson-26/blueprint.json",
-    "sha256": "a18dc37a59cfbb7a1b5d7b7d7cb7fad99c495caaa7555b533a6a9997d3e6d693"
+    "sha256": "e4f00558d57adb0fb00301f45aca0fbde2a776692dd79bfc332eb993153c7ac7"
+  },
+  {
+    "path": "track-3-automation/lesson-26/prompt.txt",
+    "sha256": "451ad5b62dc774d4fde54b7571d3351e66c81caa76544270d2742ace51b1c4b6"
   },
   {
     "path": "track-3-automation/lesson-26/README.md",
-    "sha256": "3d7aa1c195b3330862252110e2360fdab8d1b9fa04f2ba136989b1e792be69d1"
+    "sha256": "0b35f06e21b46c5953be92f33d746bf8a9d862f82d8b5ecf861d489acd8e3546"
+  },
+  {
+    "path": "track-3-automation/lesson-26/system-instructions.txt",
+    "sha256": "a4c8f3c93348967b90f1239156355e9c64f12c66251b3c92acb59bfc8833dba8"
+  },
+  {
+    "path": "track-3-automation/lesson-26/test-data.json",
+    "sha256": "68a6c00dc603e0f1f599c34b0a9efd1c6d87923aafcf54e85b195a84edb183a5"
   },
   {
     "path": "track-3-automation/lesson-27/blueprint.json",
-    "sha256": "d041863f750faa94a0125291d21501bb9ac0ad1ccc9992cd1ec0a334fafab412"
+    "sha256": "88811417f7d3580e677fde5c5289cdfaa555afd7c9036647f1a94333035a5b82"
+  },
+  {
+    "path": "track-3-automation/lesson-27/prompt.txt",
+    "sha256": "d5a9bdbe1ad4ca60bcd473b1988f0ee6becc16b5a05ecbd3340e39a22baeea90"
   },
   {
     "path": "track-3-automation/lesson-27/README.md",
-    "sha256": "6e29451e1ab8e2fad69a21e69d31a87108b998616bc5a4f33874b5a9c7c439f3"
+    "sha256": "55d63410c2d0a978eb44c59cdf2bbdbc73fa62ec1c3f25241d4f00be98efb1cc"
+  },
+  {
+    "path": "track-3-automation/lesson-27/system-instructions.txt",
+    "sha256": "1a2b8bc4031ca4c3a3482093610dc8088d6fa3b5fa8a4ef69592585113c71a9e"
+  },
+  {
+    "path": "track-3-automation/lesson-27/test-data.json",
+    "sha256": "32f011de56ba1ce0308435e8b6c5a3a9d078eb9967537d713880d88a7eecfea4"
   },
   {
     "path": "track-3-automation/lesson-28/blueprint.json",
-    "sha256": "f09a9e532a16789230a95527b849a9031b9bf298d4fdb78d3412934066d1a4d8"
+    "sha256": "02a31d1f68bc787382a346ffc8a751c947e526aed45a01f9579b4f3fc1b1d0dc"
+  },
+  {
+    "path": "track-3-automation/lesson-28/prompt.txt",
+    "sha256": "94422fb7e26c101db578cc54b5366f6f63fbae3a25dec614a834fb63a7824492"
   },
   {
     "path": "track-3-automation/lesson-28/README.md",
-    "sha256": "5d61c534d57a0bbb3f53dc6638a72b97053103c3b6f70e08f4a565e85f83caf9"
+    "sha256": "996212c5bf428ab5a0661c674d9a9d7a56feca62028b2c69c2894bf3f0ce1ba5"
+  },
+  {
+    "path": "track-3-automation/lesson-28/system-instructions.txt",
+    "sha256": "1aa995cb1cfc69ca27c3c6fe27b714e62fca08407aaa9a987a96ecac1cfb981b"
+  },
+  {
+    "path": "track-3-automation/lesson-28/test-data.json",
+    "sha256": "3d57940a6dc9cef9ce94a668c0426e49854818f4a6062a78b27363d7ef824652"
   },
   {
     "path": "track-3-automation/lesson-29/blueprint.json",
-    "sha256": "83a29a828ba900b4f3e9c37fe5966392e2e15497a7df9ce7258a84895d51e2bb"
+    "sha256": "ae48c58e05999cbbd00a5a78df18ddbbc8bf58dd72cdadc40e2a80320a3073c2"
+  },
+  {
+    "path": "track-3-automation/lesson-29/prompt.txt",
+    "sha256": "d661c6ecfd45eecdf79c171e257030095dc834235ddf9dca51740d901bc9a309"
   },
   {
     "path": "track-3-automation/lesson-29/README.md",
-    "sha256": "74f916a1b4700ec041989f6e7e9842485306e8ba26df726956e003bbc29094e4"
+    "sha256": "0505558e04bde68713c184d8b6ee1f826be83e1c30b2340f226fa38865a3a7e0"
+  },
+  {
+    "path": "track-3-automation/lesson-29/system-instructions.txt",
+    "sha256": "bd782fd1bd95ae0cd12ff5bdc7901a2a24130f23c48b25edb3fb1160fdeeb67b"
+  },
+  {
+    "path": "track-3-automation/lesson-29/test-data.json",
+    "sha256": "b22f81db66772c45a7bee8fbe5dbb05641bc2bd4a2b2e474407d93ffaf47fb0c"
   },
   {
     "path": "track-3-automation/lesson-30/blueprint.json",
-    "sha256": "1675fa46b275a883fbf21d536585f980c0fac19f6c15c64c6a48aefff951dcb1"
+    "sha256": "134224c33d462a208a64eab113b1e3aef487bc1cf1490f7a725902119af72e7f"
+  },
+  {
+    "path": "track-3-automation/lesson-30/prompt.txt",
+    "sha256": "3eba1ee96a7ddc14b295b3579dda39a1fb94c0cf751e1b0cbfd12f06222bd01d"
   },
   {
     "path": "track-3-automation/lesson-30/README.md",
-    "sha256": "f347f79179264de4e226d3a23fed5c9fa41e310ac82c2bc0377dd151d49d27d7"
+    "sha256": "e5d6dc58cd1fb79c6968194920916482c4fabea860f8b8cdadf926498f3c4e14"
+  },
+  {
+    "path": "track-3-automation/lesson-30/system-instructions.txt",
+    "sha256": "9c327ce267273d9c8aaa81c5b6c14f65bf5733bc0a2900857c8ee030f7305b2a"
+  },
+  {
+    "path": "track-3-automation/lesson-30/test-data.json",
+    "sha256": "a7227c99e93626c40f781cf30093371dfd01bee727d502073e3e613386de6822"
   },
   {
     "path": "track-3-automation/lesson-31/blueprint.json",
-    "sha256": "0586f7d094c4861516ff8a3ecfbac5f7c92cc79b906fe7018f4c8e5be0101e94"
+    "sha256": "f02db611ce703bcaa0ac7160e545fbb900c31e70ac110c00863ed6cb5cdfa8b8"
+  },
+  {
+    "path": "track-3-automation/lesson-31/prompt.txt",
+    "sha256": "d2c1bb2c8b11e4a010c111ad7fc6922acb149b5107fa46d644f834a9e67f7a65"
   },
   {
     "path": "track-3-automation/lesson-31/README.md",
-    "sha256": "e73134549d9df09ad51ca9a2cefa1161b369eb5472210e61972c8e1dfb9757d7"
+    "sha256": "7456941be9d3dac12533f3f60ef2e272bcc27e41220b43d7dbddce2252e3303c"
+  },
+  {
+    "path": "track-3-automation/lesson-31/system-instructions.txt",
+    "sha256": "60064bc35a75a4d3e0dabe969a28b5d2f3de73044ef5970779f4ba066ecb02fe"
+  },
+  {
+    "path": "track-3-automation/lesson-31/test-data.json",
+    "sha256": "1a9a79fec8a0d3de2a384caf24d3b8d4630a5121512061ecfbb03efdc0e22086"
   },
   {
     "path": "track-3-automation/lesson-32/blueprint.json",
-    "sha256": "37a4a52d64e9f3e696396f7c30186035c2133e4b0ea173c99b91297675d23f78"
+    "sha256": "b7c20fa3ffd8bc0e14a510f52485a5fc7ec3478e99717f6abdf005dae48360a5"
+  },
+  {
+    "path": "track-3-automation/lesson-32/prompt.txt",
+    "sha256": "f2009a522ae41a1e0b4f51553adfc725996bbb0fb91594755914c82ef58485ac"
   },
   {
     "path": "track-3-automation/lesson-32/README.md",
-    "sha256": "df58efb4e7dfb577f4635538f583762ebbd69661465b265f885cf7f8835ed794"
+    "sha256": "bd34ad18a9748b8d0403358637c02ba62a58d0229eee3b75a86d6323b9360246"
+  },
+  {
+    "path": "track-3-automation/lesson-32/system-instructions.txt",
+    "sha256": "cab5acaefe72197079fe5dc7bab2618878a9363e6a7e41feea08f114928fa90a"
+  },
+  {
+    "path": "track-3-automation/lesson-32/test-data.json",
+    "sha256": "d5926c03f45bb6c94ae67079fb7c378775c774d467eb8771bcb3c6e010c68a78"
   },
   {
     "path": "track-3-automation/lesson-33/blueprint.json",
-    "sha256": "cb0131319564d7f31fe0c7f44bdf79aef541aa59edb197c0490ffcc596113876"
+    "sha256": "cfdbaeb7842f11c2d0f81f881060b39f2f32838ef1937bb73fd9534727627248"
+  },
+  {
+    "path": "track-3-automation/lesson-33/prompt.txt",
+    "sha256": "ece75d2ab4cea44a574852a7a01c15d8c5e23c10e597f8876925c384005f9f18"
   },
   {
     "path": "track-3-automation/lesson-33/README.md",
-    "sha256": "e5ad974af5270307649d89133d4a63a6b7be26da07d6e52d4b75a2a353299caf"
+    "sha256": "df34c0d39d5bbcc40eb1fd5154f4964c6f2b6e980f47253bb8c7e3921a44e3e9"
+  },
+  {
+    "path": "track-3-automation/lesson-33/system-instructions.txt",
+    "sha256": "daf0c5200911012af27addb91e8e27a22445a84f30cc275eb4a49dd7c258d13f"
+  },
+  {
+    "path": "track-3-automation/lesson-33/test-data.json",
+    "sha256": "62b893ff8308015fb0b4a31346a8bb044b78750e762a49df71ad01224664843f"
   },
   {
     "path": "track-3-automation/lesson-34/blueprint.json",
-    "sha256": "38a699885fd235e2feb482d772749a7d7bfa181e2a6b0980e5ad5e23d593f153"
+    "sha256": "608a9bd5f7255194eadcccf0020f295d3eb243f4892f993c91ba55c6cd089977"
+  },
+  {
+    "path": "track-3-automation/lesson-34/prompt.txt",
+    "sha256": "992cc80b6517347fe186bfadcfd723adca724dde3d305200a4aad1d192e4f6a2"
   },
   {
     "path": "track-3-automation/lesson-34/README.md",
-    "sha256": "695923e93cca2d44dc7b018cf23715e67ee1ec430a674af3f4f4cded1e671d34"
+    "sha256": "2140406e873f7f4ee012009dc5ec4446308d8a2e27cdaa4e31f455a52b796554"
+  },
+  {
+    "path": "track-3-automation/lesson-34/system-instructions.txt",
+    "sha256": "62cf76e29a44faf9994e0a0e8979108251c6d5f35f69eced80c86955b1b7884e"
+  },
+  {
+    "path": "track-3-automation/lesson-34/test-data.json",
+    "sha256": "823bae7826b0c48c719d35acf37200d09d7b014c2639ff633246c0dca3cd96fb"
   },
   {
     "path": "track-3-automation/lesson-35/blueprint.json",
-    "sha256": "e5c08e9f1a68336299005fbf0b4858710b66bc33351e1ead7a7208c301285c72"
+    "sha256": "97104bfe39bd6ca303d623de67eefd061b8e87ca2770b833825a678e13414b30"
+  },
+  {
+    "path": "track-3-automation/lesson-35/prompt.txt",
+    "sha256": "5f6655e970efe7b791058bc207267fecd0c7b0aa49ff34f6a0d0d53c3ef861d8"
   },
   {
     "path": "track-3-automation/lesson-35/README.md",
-    "sha256": "44dab45c9f0bca7c9dd5aaa580373ab0231fa0dd9a7ce3605e7dd4ce2d8de60d"
+    "sha256": "515b731482df7bccb929c641070dfac0fe787e7bda3d8cad0550f9d6002462ee"
+  },
+  {
+    "path": "track-3-automation/lesson-35/system-instructions.txt",
+    "sha256": "8ac26777f0e95b9aaac806ea72ce2cf813a56de90e44cf7415d22106a9ce9727"
+  },
+  {
+    "path": "track-3-automation/lesson-35/test-data.json",
+    "sha256": "475aa8396e54c063288447fe4c3dc8c3c57c2263420575547fdce56fbda5ca88"
   },
   {
     "path": "track-3-automation/lesson-36/blueprint.json",
-    "sha256": "63039f201e712981d346e27b9f27adbe263cb7eb54babe10f3fcb001db959295"
+    "sha256": "76c82a14847224a16e28076e9655dc061bcea9c328e2fea869caba178346674e"
+  },
+  {
+    "path": "track-3-automation/lesson-36/prompt.txt",
+    "sha256": "2bad93ad5e2a07796cece9c03e38016377a32187db25799abe37c4ddbbd304fe"
   },
   {
     "path": "track-3-automation/lesson-36/README.md",
-    "sha256": "c77d59f7f4ce1d23e3c1352e878cd4004c8a8f2de53339143856a7b5a3fce292"
+    "sha256": "040952f3280c5c683403bddafb173a952d56d9c1e7dcfad4b6724e37fcf123d4"
+  },
+  {
+    "path": "track-3-automation/lesson-36/system-instructions.txt",
+    "sha256": "136cfb6a4404bde71229e2fc2fa8fbf82d23f6c6419aea6034236f1bf3762e13"
+  },
+  {
+    "path": "track-3-automation/lesson-36/test-data.json",
+    "sha256": "a2fef0246c45acafeb1639d6b7e77260e4e15b7166d6057e22a70362ea0090d8"
   },
   {
     "path": "track-3-automation/lesson-37/blueprint.json",
-    "sha256": "7e7e4beac559c8e4a12919a9cab89f193c43fe268b69652882d60ad810ce1efe"
+    "sha256": "1b8ecf570de228f6de7df9d4a3b8651dacd48967bec0291c81d325de7b7a063e"
+  },
+  {
+    "path": "track-3-automation/lesson-37/prompt.txt",
+    "sha256": "78d16b0a975760c57c7a65d2d2e5bb96d88d2791f07e515ce7707db558c42287"
   },
   {
     "path": "track-3-automation/lesson-37/README.md",
-    "sha256": "207df2a5446ebea168e1dd9f4fbb824d17acc8ef5c5aa31d8066e15065bd86e4"
+    "sha256": "1f5ac96e72de4a81eaaeebeacf4ef2d501df76f94efce07c50040f85eece46c3"
+  },
+  {
+    "path": "track-3-automation/lesson-37/system-instructions.txt",
+    "sha256": "c8999aded330a5f184eae86c12397030fbdc850d5bd211140a7fc70b050f656e"
+  },
+  {
+    "path": "track-3-automation/lesson-37/test-data.json",
+    "sha256": "93d542995369317afbf65cfdf5d673d817348913b8ff347bcffd847c20afd8ee"
   },
   {
     "path": "track-3-automation/lesson-38/blueprint.json",
-    "sha256": "743ef03f0f698a5eda2e59997c5a0da91b2790ba151f241c6818da2f7f030823"
+    "sha256": "1bcb67d39af1e158e85cbdf2d0065a6cb54360316850815f4d7c086c51bdf93e"
+  },
+  {
+    "path": "track-3-automation/lesson-38/prompt.txt",
+    "sha256": "e28f9c44ed0f3d559e0c32c9d5ab9af8fa94947de08251d831cca1059b9eb734"
   },
   {
     "path": "track-3-automation/lesson-38/README.md",
-    "sha256": "913ef0781bf3baaadef0c0ac0725120b49bc8e435e9219b0ded0988813d15588"
+    "sha256": "c8a8f64b07198d9c72e0ccf96e734c08a2de5d9e619054289354c32b4e513a1b"
+  },
+  {
+    "path": "track-3-automation/lesson-38/system-instructions.txt",
+    "sha256": "1c16e0e4c880e1971c40fec0d269d18bdf09f9af41a6789d93d28c104ea8468a"
+  },
+  {
+    "path": "track-3-automation/lesson-38/test-data.json",
+    "sha256": "f6875c939f832a5e06bb102290169886a139c1a8f758546bc01d4afc7ad3078d"
   },
   {
     "path": "track-3-automation/lesson-39/blueprint.json",
-    "sha256": "cc9e7ef9952e256895884727a8bcf50d527801c1fc073d48fcf2002cc5da2686"
+    "sha256": "ea292694e09f427ca653cab5b503dc8192c550cff25f123f3f48174aa6a8d621"
+  },
+  {
+    "path": "track-3-automation/lesson-39/prompt.txt",
+    "sha256": "cbdf86d492c2c9798330e38484b4731ac935d5163f1240691fbb124f79c06957"
   },
   {
     "path": "track-3-automation/lesson-39/README.md",
-    "sha256": "ba2a1249dc15b8f648d6cccbba36ac8e855eb8378079974a41e49ade8f8b247c"
+    "sha256": "7d5bc04f34d0e96ad06da8805062896c79f7b31843fdddaf73f3c446094c366a"
+  },
+  {
+    "path": "track-3-automation/lesson-39/system-instructions.txt",
+    "sha256": "1a39c227b527bdce7c698f5d533dc6aadc3c82ff7bd26c6f4043a95c58f04cc3"
+  },
+  {
+    "path": "track-3-automation/lesson-39/test-data.json",
+    "sha256": "a71c373fa46d90dd612d02bfc98a99fb83b85d0caa9f09a2f9e7d9992005944e"
   },
   {
     "path": "track-3-automation/lesson-40/blueprint.json",
-    "sha256": "7439037da7b692bc32a942529508a8e6469e6c169d40ac4ed614302226d6c44e"
+    "sha256": "d774980149c23b36b3c77a573cfcef0eee0f05a0a8db167b6903f1039d3acea9"
+  },
+  {
+    "path": "track-3-automation/lesson-40/prompt.txt",
+    "sha256": "ab38b3abc54b32768d637c95ba65d8e312f433043cc251baa521a3600af467f6"
   },
   {
     "path": "track-3-automation/lesson-40/README.md",
-    "sha256": "37805afbcc8ca30b7385a87d87179914001fc2a20462bfc0f68ade30c62488f7"
+    "sha256": "7ca75d4a5c40965a704f597723842bc8a4e703e8e02adf93d6dca58d47b54bf2"
+  },
+  {
+    "path": "track-3-automation/lesson-40/system-instructions.txt",
+    "sha256": "c3173416e68864495d92d1358f8461377edcf18e1f8cbb18c707e9cd8d23fea9"
+  },
+  {
+    "path": "track-3-automation/lesson-40/test-data.json",
+    "sha256": "8ac74a60a1da425d7b6b8f94553110d98637c69d4fe01db71b730add02f7e65b"
   },
   {
     "path": "track-3-automation/lesson-41/blueprint.json",
-    "sha256": "4b983d11bdb0df2abc48e1dcd6c1107e1e67453185d2b25fab2ecceda50342ef"
+    "sha256": "85e45325d4ca4ffdb50bcb7f910f0171d344eb774d26ee130f6a38b8be4fadb0"
+  },
+  {
+    "path": "track-3-automation/lesson-41/prompt.txt",
+    "sha256": "129af95a946302797c5b369793296dd0d678200e61873bb0802e26b1eff88603"
   },
   {
     "path": "track-3-automation/lesson-41/README.md",
-    "sha256": "be374664e1c6f6bacbcfe92016b3f85130d1bc9a64eacabdcd834f1a77d42e01"
+    "sha256": "a60e2944ee5f0e834377146399a31424dae19993002a29a957e0628948951eff"
+  },
+  {
+    "path": "track-3-automation/lesson-41/system-instructions.txt",
+    "sha256": "bb36f943c3f1bb670e106ec5ff75d0c733715ed00bdf6c54b581c1c0c7dccbe6"
+  },
+  {
+    "path": "track-3-automation/lesson-41/test-data.json",
+    "sha256": "88a513e6f964a1604ee4f30e63393fb652d4abc4b00d9c034696a29259096d3f"
   },
   {
     "path": "track-3-automation/README.md",
-    "sha256": "b635127223a42a12687116a91d54ef7195911d0be98e191edbcc12c9f4667e41"
+    "sha256": "c161a8bfc258c3892e289a471153957bf9cbe89a1fe812d4db9ea345c7f79e17"
   },
   {
     "path": "track-3-automation/simulator.py",
@@ -545,6 +909,6 @@
   },
   {
     "path": "VALIDATION.md",
-    "sha256": "7ba34d8a8245e4f9dc5623681a679328cfcf731312c1e1bc4c5722920aa80e63"
+    "sha256": "877fcf4515cedb1d093d1262c5facb65664b0b260eea6da381cffd42730f97f4"
   }
 ]

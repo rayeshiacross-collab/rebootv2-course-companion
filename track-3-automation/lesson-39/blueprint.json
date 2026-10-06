@@ -1,17 +1,49 @@
 {
-  "lesson_slot": 39,
-  "working_focus": "Automation Testing and Evaluation",
-  "inventory_status": "unverified",
-  "format": "portable reference, not vendor import",
-  "task": "Build held-out normal, empty, malformed, ambiguous and downstream-failure cases.",
-  "acceptance": "Compare actual versus expected outcomes; route empty input to review status.",
-  "challenge": "Repeat AI tests and record variability.",
-  "review_risk": "needs_review mixed into category enum",
-  "controls": {
-    "input_validation": "required before side effects",
-    "approval": "bind to exact draft when action requires review",
-    "idempotency": "persistent stable-key handling required for real side effects",
-    "logs": "no secrets or unnecessary personal data"
+  "lesson": 39,
+  "video_id": "xnL515DcruQ",
+  "title": "Scaling Automation Across Your Team",
+  "format": "portable reference; not a vendor import",
+  "execution": "offline design exercise; provider integration untested",
+  "trigger": "Team handoff request",
+  "required_fields": [
+    "workflow",
+    "owner",
+    "reviewer",
+    "backup",
+    "permissions"
+  ],
+  "field_mapping": {
+    "workflow": "validated_input.workflow",
+    "owner": "validated_input.owner",
+    "reviewer": "validated_input.reviewer",
+    "backup": "validated_input.backup",
+    "permissions": "validated_input.permissions"
   },
-  "vendor_execution_status": "not tested"
+  "action": "handoff",
+  "output_fields": [
+    "role_matrix",
+    "runbook",
+    "escalation"
+  ],
+  "steps": [
+    "Validate required fields and event identity",
+    "Assign least-privilege roles, backup ownership and a rollback exercise.",
+    "Review exact output before any external side effect",
+    "Record minimal status and deduplicate the event"
+  ],
+  "failure_handling": {
+    "invalid_input": "reject with field-specific error; no external action",
+    "ambiguous_output": "human review",
+    "timeout": "record failure; bounded retry only when idempotency is assured",
+    "duplicate": "suppress repeated action",
+    "changed_draft": "invalidate previous approval"
+  },
+  "security_note": "Do not grant real account access as part of a sample.",
+  "acceptance": [
+    "Required fields are present and typed",
+    "A missing-field test cannot trigger an action",
+    "Ambiguity routes to review",
+    "A repeated event cannot duplicate a side effect",
+    "Logs contain only necessary operational data"
+  ]
 }
